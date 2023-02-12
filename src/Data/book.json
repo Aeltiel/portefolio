@@ -1,0 +1,77 @@
+[
+    {
+       "id" : "001",
+       "title" : "Présentation",
+       "description" : "Je suis Ingrid Stemer, jeune diplômée de la formation Developpeur Web dispensée par Openclassrooms. À la recherche d'un premier emploi en tant que Développeuse Web ou Développeuse front-end, je suis motivée, sérieuse et d'une grande curiosité. J'aime coder et le travail bien fait est une priorité pour moi",
+       "dragon's key" : "1"
+    },
+    {
+        "id" : "002",
+        "title" : "Projets",
+        "description" : "Découvrez dans cet ouvrage, les différents projets sur lesquels j'ai travaillé pendant ma formation",
+        "projects" : [
+            {
+                "id":"project-id001",
+                "title": "Booki",
+                "description" : "Dans ce premier projet, l'objectif était de réaliser une page web en HTML et CSS à partir d'une maquette qui m'a été fournis. Le repect de cette dernière était primordiale pour la réussite du projet. J'ai dû découper la maquette pour pouvoir la réaliser en HTML et utiliser Flexbox pour faire la mise en forme. Des effets au survol ont été ajouté sur certain élément. L'utilisation de Fontawsome et de GoogleFont étaient également demandé",
+                "Langages" : "HTML5, CSS3"
+            },
+            {
+                "id":"project-id002",
+                "title": "Oh My Food",
+                "description":"Oh My Food est le second projet réaliser lors de ma formation, ici le but était de créer un site pour commander dans divers restaurant. Plusieurs pages étaient nécessaires et cela à également permis d'utiliser le préprocesseur Sass ainsi que de faire des animations CSS. Cela a permis d'améliorer mon niveau de compréhension et d'usage du CSS",
+                "Langages":"HTML5, CSS3, Sass"
+            },
+            {
+                "id":"project-id003",
+                "title": "La Panthère",
+                "description": "Le but de ce projet est de se former aux principes du SEO et d'optimisation du site. Ainsi je devais auditer le site afin de connaitre ces performances et examiner le code pour l'optimiser et retirer tout ce qui est reconnu comme des technique de Black Hat (comme mettre en tout petit et de la même couleur que le fond des mots-clés par exemple), assurrer l'accessibilité du site en faisant en sorte qu'il n'y a pas de texte important dans les images, en veillant à ce que le texte soit de la bonne taille, et que les contrastes soient suffisants. Pour finir un petit peu d'optimisation, notamment sur les images pour qu'elles aient le format approprié pour un site internet" 
+            },
+            {
+                "id":"project-id004",
+                "title": "Kanap", 
+                "description" : "Le projet Kanap est un site de e-commerce qui vend des canapés. J'avais à disposition le site déjà prêt, ma mission était de le rendre dynamique grâce à JavaScript. Ainsi j'ai pu afficher les produits disponibles en requêtant une API et en intégrant dans la page web les éléments HTML nécessaire. De plus, je devais afficher les détails d'un produit lorsque l'on cliquait sur ce dernier sur la page d'accueil et ce grâce à la récupération de données via l'URL afin de requêter l'API pour ce produit spécifiquement et de manière dynamique. Sur ces détails, il est possible de sélectionner une couleur et une quantité et d'ajouter le produit dans le panier. Le panier qui s'affiche en fonction de ce qu'il y a dans le localstorage et qui se calcul de manière dynamique. Enfin pour valider la commande, le formulaire est vérifié via des Regex afin que les données transmisent par le client soient valides pour ainsi valider la commande",
+                "Langages":"JavaScript"
+            },
+            {
+                "id":"project-id005",
+                "title": "Piiquante",
+                "description" : "Sur ce projet, mon objectif était de bâtir une API REST afin de permettre à un site de partage de sauce piquante de proposer à ces utilisitateurs de se connecter, d'ajouter une sauce avec un titre, une image, etc... Mais aussi la possibilité de la modifier et de la suppprimer. Un système de like/dislike a été ajouté. Les données sont enregistrées sur une base de données MongoDB. Le serveur a été crée avec express, et la sécurisation des mots de passe est assurée via Bcrypt. Un système de validation des emails est également présente pour s'assurer qu'un email ne soit utilisé que pour un seul compte et que ce dernier soit valide.",
+                "Langages" :"JavaScript, Express, MongoDB, Bcrypt" 
+            },
+            {
+                "id":"project-id006",
+                "title": "Kasa",
+                "description" : "La mission lié à ce projet, est de bâtir la partie front-end du site immobilier Kasa. Pour cela j'ai utilisé React.js ainsi que react router dom afin de créer les chemins nécessaires à la navigation sur le site. J'ai ainsi découvert le fonctionnement de React et de son système de composants ainsi que son système de hook qui permet de manipuler l'état de nos composants, ainsi que les props qui permettent de personnaliser à volonté nos composants les rendant réutilisable à l'infini. Comme pour le projet Kanap, la récupération de données via l'URL a été utilisé pour récupéré le nécessaire afin d'afficher les détails sur une location. Tout le site est créer en Single Page Application. Ce dernier projet de ma formation, m'a permis de revoir et d'utiliser tout ce que j'ai pu voir auparavant, en l'adaptant à l'écriture de React ",
+                "Langages" : "React.js, Sass" 
+            }
+        ],
+        "dragon's key" : "2"
+    },
+    {
+        "id" : "003",
+        "title" : "Diplôme",
+        "description" : "Juin 2022-Janvier 2023 : Développeur web chez Openclassrooms (bac +2)",
+        "dragon's key" : "3" 
+    },
+    {
+        "id" : "004",
+        "title" : "Loisirs",
+        "description" : "Venez découvrir ce que je fais pendant mon temps libre ! Il y a 3 activités que j'affectionne particulièrement, je vais vous les détailler un peu : ",
+        "Loisirs" : [
+            {
+                "title": "Dessiner",
+                "description" : "Comme vous avez pu le remarquer en entrant dans la bibliothèque, j'aime dessiner. Cela me permet d'exprimer mon côté créatif et de libéré mon imagination. Mes dessins sont réaliser à la main. Puis je les numérise pour pouvoir les mettres au propre, et les colorié grâce à illustrator et photoshop. N'hésitez pas à jeter un oeil à mon Insta, je poste les dessins que j'ai terminer"
+            },
+            {
+                "title":"Jouer aux Jeux Vidéos",
+                "description" : "J'aime les jeux vidéos depuis que je suis petite. Je joue plus sur console que sur PC, tout dépend des jeux. J'affectionne particulièrement les consoles de Nintendo car il y en a pour tous les goûts. Mes styles de jeux préféré sont les rpg (comme Dragon Quest), mais j'aime aussi les jeux d'aventure comme les Zelda et tout plein d'autre. Et bien que j'aime les jeux solos, j'apprécie aussi les jeux multijoueurs, comme World of Warcraft"
+            },
+            {
+                "title" : "Lire",
+                "description" : "La lecture est quelque chose de très important. Je lis de tout ! Des romans bien sur, de fantasy la plupart du temps, mais aussi des ouvrages de vulgarisation scientifique qui peuvent touché à divers domaine comme la la vie sur terre, ou l'astronomie. J'apprécie également les livres d'Histoire. Et dans un tout autre registre je lisais beaucoup de mangas."
+            }
+        ],
+        "dragon's key" : "4" 
+    }
+]

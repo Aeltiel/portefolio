@@ -1,0 +1,8 @@
+@keyframes levitation{
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(100px);
+    }
+}
