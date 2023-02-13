@@ -1,13 +1,9 @@
-import { Link } from "react-router-dom";
+import NavBar from "../Layout/NavBar";
 
 function Home (){
     return(
-        <nav>
-            <ul>
-                <li><Link to='/'>Accueil</Link></li>
-                <li><Link to='/Bibliotheque'>Bibliothèque</Link></li>
-            </ul>
-        </nav>
+        <NavBar />
     )
+ 
 }
 export default Home;

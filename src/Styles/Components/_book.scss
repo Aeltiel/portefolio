@@ -4,6 +4,7 @@
     height: $heightBook;
     perspective: 1000px;
     margin: auto;
+    //pour faire bouger le livre sans toucher à son inclinaison, je dois mettre l'animation dans le container
     animation: levitation 3s infinite ease-in-out alternate-reverse;
     
 }

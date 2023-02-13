@@ -4,7 +4,7 @@ function Book() {
             <div className="book">
                 <div className="book_side front">
                     <div className="front--title"><h4>Couverture</h4></div>
-                    <i class="fa-solid fa-lock"></i>
+                    <i className="fa-solid fa-lock"></i>
                 </div>
                 <div className="book_side back"></div>
                 <div className="book_side left"></div>
