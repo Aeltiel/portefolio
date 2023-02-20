@@ -36,7 +36,7 @@ function Home() {
                         <h2 className="home__project--title presentation__title">Mes projets !</h2>
                         <p className=" home__project--text">Vous souhaitez voir de quoi je suis capable ? Regardez mes projets !</p>
                         <div className="home__project__btn">
-                            <Button name={<Link to='/Projects'>Mes Projets</Link>} />
+                            <Link to='/Projects'><Button name={"Mes Projets"}/></Link>   
                         </div>
                     </div>
                 </div>
