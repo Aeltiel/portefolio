@@ -1,4 +1,4 @@
-import Book from '../Component/Book';
+import Book from '../Pages component/Book';
 
 function Bibliothèque(){
    //<img  className='background__img' src={Background} alt="Illustration d'une bibliothèque médiévale" />

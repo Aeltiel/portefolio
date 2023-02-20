@@ -1,0 +1,88 @@
+.home{
+    &__Title{
+        text-align: center;
+        margin-bottom: 100px;
+        color: $secondarycolor;
+    }
+    &__info{
+        width: 100%;
+        text-align: justify;
+        justify-content: center;
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: 1100px 300px;
+        background-color: lighten($secondarycolor, 5%);
+        &__text{
+            grid-row-end: 1;
+            align-self: center;
+            border-radius: 20px;
+            border: 3px solid $thirdcolor;
+            color: white;
+            background-color: $secondarycolor;
+            padding: 20px;
+            margin-left: 200px;
+            margin-right: 200px;
+            position: relative;
+            & ::before{
+                content: "";
+                left : 100%;
+                bottom: 12.5%;
+                border : solid transparent;
+                width: 0;
+                height: 0;
+                position: absolute; 
+                border-left-color: $thirdcolor;
+                border-width: 35px;
+            }
+            &::after{
+                content: "";
+                left : 100%;
+                bottom: 15%;
+                border : solid transparent;
+                width: 0;
+                height: 0;
+                position: absolute; 
+                border-left-color: $secondarycolor;
+                border-width: 30px;
+            }
+            &--text--1{
+            text-align: center;
+            grid-row-end: 2;
+        }
+        }
+        &--img{
+            width: 300px;
+            height: 600px;
+            object-fit: contain;
+            grid-row-end: 1;
+            transform: scaleX(-1);
+        }
+    }
+    &__project{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        &__container{
+            width: 800px;
+        }
+        &--text{
+            text-align: center;
+            font-size: 1.2em;
+        }
+        &__btn{
+            margin-top: 50px;
+            margin-left: 25%;
+        }
+    }
+}
+.fa-fan{
+    padding-right: 15px;
+    padding-left: 15px;
+    color: $thirdcolor;
+    animation: rotate 2s linear infinite;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

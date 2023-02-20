@@ -1,0 +1,27 @@
+.btn {
+    width: 400px;
+    height: 60px;
+    background-color: $primarycolor;
+    color: white;
+    border-radius: 30px;
+    border: 3px solid $thirdcolor;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -16%;
+        right: -2%;
+        width: 405px;
+        height: 65px;
+        background-color: transparent;
+        border: 5px dashed $secondarycolor;
+        border-radius: 30px;
+        animation: pulse 1s linear infinite alternate-reverse;
+    }
+
+    &:hover {
+        background-color: $thirdcolor;
+    }
+}

@@ -1,0 +1,28 @@
+.presentation{
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    justify-content: center;
+    gap : 80px;
+    &__title{
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: $secondarycolor;
+        color: $primarycolor;
+        line-height: 3;
+    }
+    &__text{
+        width: 75%;
+        text-align: justify;
+    }
+    &__img{
+        width : 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: solid 5px $primarycolor;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}

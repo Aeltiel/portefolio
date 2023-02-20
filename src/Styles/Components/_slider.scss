@@ -1,0 +1,15 @@
+.slider-container{
+    max-width: 600px;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid $primarycolor;
+    overflow: hidden;
+    & .slider{
+        display: flex;
+        animation: slider 15s infinite ease-in-out;
+        & img{
+            width: 100%;
+        }
+    }
+}
