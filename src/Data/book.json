@@ -8,7 +8,7 @@
     {
         "id" : "002",
         "title" : "Projets",
-        "description" : "Découvrez dans cet ouvrage, les différents projets sur lesquels j'ai travaillé pendant ma formation",
+        "description" : "Découvrez dans cette partie, les différents projets sur lesquels j'ai travaillé pendant ma formation",
         "projects" : [
             {
                 "id":"project-id001",

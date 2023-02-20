@@ -4,6 +4,7 @@ import NavBar from "../Layout/NavBar";
 import Footer from "../Layout/Footer";
 import Slider from "../Component/Slider";
 import Button from "../Component/Button";
+import Title from "../Component/Title";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -11,11 +12,7 @@ function Home() {
         <>
             <NavBar />
             <main className="homeContainer">
-                <h1 className="home__Title">
-                    <i className="fa-solid fa-fan"></i>
-                    Bienvenue sur mon portefolio !
-                    <i className="fa-solid fa-fan"></i>
-                </h1>
+                <Title title={"Bienvenue dans mon portefolio !"}/>
 
                 <div className="presentation">
                     <img className="presentation__img" src={moi} alt="Ingrid Stemer" />

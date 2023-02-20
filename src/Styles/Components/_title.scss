@@ -1,0 +1,11 @@
+.title{
+    text-align: center;
+        margin-bottom: 100px;
+        color: $secondarycolor;
+}
+.fa-fan{
+    padding-right: 15px;
+    padding-left: 15px;
+    color: $thirdcolor;
+    animation: rotate 2s linear infinite;
+}
