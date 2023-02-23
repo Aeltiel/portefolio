@@ -1,0 +1,35 @@
+.project{
+    &__icons{
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    gap : 50px;
+    &--img{
+        width: 45px;
+        height: 60px;
+        object-fit: contain;
+        animation: rotate 5s linear infinite;
+    }}
+    &__slider{
+        width: 100%;
+        margin-top: 90px;
+        background-color: $primarycolor;
+    }
+
+}
+.fa-html5{
+    color : #e34c26;
+    animation: shake 0.2s linear infinite alternate-reverse;
+}
+.fa-css3-alt{
+    color: #264de4;
+    animation: shake 0.2s linear infinite alternate-reverse;
+}
+.fa-js{
+    color: #f0db4f;
+    animation: shake 0.2s linear infinite alternate-reverse;
+}
+.fa-react{
+    color: #88dded;
+    animation: rotate 5s linear infinite;
+}

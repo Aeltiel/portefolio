@@ -64,3 +64,12 @@
         opacity: 1;
     }
 }
+
+@keyframes shake{
+    from{
+        transform: skewX(2deg);
+    }
+    to{
+        transform: skewX(-2deg);
+    }
+}
