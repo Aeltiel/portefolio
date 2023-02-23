@@ -15,7 +15,16 @@
         margin-top: 90px;
         background-color: $primarycolor;
     }
-
+    &__detail{
+        margin-top: 100px;
+    }
+    &__cta{
+        text-align: center;
+        margin-top: 50px;
+        & p{
+            margin-bottom: 50px;
+        }
+    }
 }
 .fa-html5{
     color : #e34c26;
