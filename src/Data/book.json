@@ -2,6 +2,7 @@
     {
        "id" : "001",
        "title" : "Présentation",
+       "image" : "http://localhost:5500/src/Assets/moi.webp",
        "description" : "Je suis Ingrid Stemer, jeune diplômée de la formation Developpeur Web dispensée par Openclassrooms. À la recherche d'un premier emploi en tant que Développeuse Web ou Développeuse front-end, je suis motivée, sérieuse et d'une grande curiosité. Située près de Clermont-Ferrand, je peux travailler sur site ou bien de manière hybride. J'aime coder et le travail bien fait est une priorité pour moi.",
        "dragon's key" : "1"
     },
@@ -56,7 +57,7 @@
                 "title": "Portefolio",
                 "image" : "http://localhost:5500/src/Assets/Corbeau-sur-crâne-01.webp",
                 "description" : "Et oui mon portefolio est un projet en lui même ! Pour toujours m'améliorer, j'ai réutilisé tout ce que j'ai appris lors de ma formation. En effet, je l'ai créé sous React.js avec une touche de Redux pour découvrir comme cela fonctionne. De même, j'ai appris comment faire de la 3D mais aussi améliorer mon niveau en animation fait via CSS. J'ai également pû créer un mini-jeux pour rendre ce portefolio plus immersif et amusant. Tout cela pour stimuler mon imagination et ma créativité. Mais aussi apprendre de nouvelle chose, progresser, me dépasser pour m'améliorer",
-                "Langages" : "React.js, Sass"
+                "Langages" : "React.js, Redux, Sass"
             }
         ],
         "dragon's key" : "2"
@@ -70,19 +71,25 @@
     {
         "id" : "004",
         "title" : "Loisirs",
-        "description" : "Venez découvrir ce que je fais pendant mon temps libre ! Il y a 3 activités que j'affectionne particulièrement, je vais vous les détailler un peu : ",
+        "description" : "Venez découvrir ce que je fais pendant mon temps libre ! Il y a 3 activités que j'affectionne particulièrement, je vais vous les détaille un peu : ",
         "Loisirs" : [
             {
+                "id" : "1",
                 "title": "Dessiner",
-                "description" : "Comme vous avez pu le remarquer en entrant dans la bibliothèque, j'aime dessiner. Cela me permet d'exprimer mon côté créatif et de libéré mon imagination. Mes dessins sont réaliser à la main. Puis je les numérise pour pouvoir les mettres au propre, et les colorié grâce à illustrator et photoshop. N'hésitez pas à jeter un oeil à mon Insta, je poste les dessins que j'ai terminer"
+                "description" : "Comme vous avez pu le remarquer en entrant dans la bibliothèque, j'aime dessiner. Cela me permet d'exprimer mon côté créatif et de libéré mon imagination. Mes dessins sont réaliser à la main. Puis je les numérise pour pouvoir les mettre au propre, et les colorier grâce à illustrator et photoshop. N'hésitez pas à jeter un oeil à mon Insta, je poste les dessins que j'ai terminé.",
+                "image" : "http://localhost:5500/src/Assets/dessin.webp"
             },
             {
+                "id" : "2",
                 "title":"Jouer aux Jeux Vidéos",
-                "description" : "J'aime les jeux vidéos depuis que je suis petite. Je joue plus sur console que sur PC, tout dépend des jeux. J'affectionne particulièrement les consoles de Nintendo car il y en a pour tous les goûts. Mes styles de jeux préféré sont les rpg (comme Dragon Quest), mais j'aime aussi les jeux d'aventure comme les Zelda et tout plein d'autre. Et bien que j'aime les jeux solos, j'apprécie aussi les jeux multijoueurs, comme World of Warcraft"
+                "description" : "J'aime les jeux vidéos depuis que je suis petite. Je joue plus sur console que sur PC, tout dépend des jeux. J'affectionne particulièrement les consoles de Nintendo car il y en a pour tous les goûts. Mes styles de jeux préféré sont les rpg (comme Dragon Quest), mais j'aime aussi les jeux d'aventure comme les Zelda et tout plein d'autre. Et bien que j'aime les jeux solos, j'apprécie aussi les jeux multijoueurs, comme World of Warcraft",
+                "image" : "http://localhost:5500/src/Assets/jv.webp"
             },
             {
+                "id" : "3",
                 "title" : "Lire",
-                "description" : "La lecture est quelque chose de très important. Je lis de tout ! Des romans bien sur, de fantasy la plupart du temps, mais aussi des ouvrages de vulgarisation scientifique qui peuvent touché à divers domaine comme la la vie sur terre, ou l'astronomie. J'apprécie également les livres d'Histoire. Et dans un tout autre registre je lisais beaucoup de mangas."
+                "description" : "La lecture est quelque chose de très important. Je lis de tout ! Des romans bien sur, de fantasy la plupart du temps, mais aussi des ouvrages de vulgarisation scientifique qui peuvent touché à divers domaine comme la la vie sur terre, ou l'astronomie. J'apprécie également les livres d'Histoire. Et dans un tout autre registre je lisais beaucoup de mangas.",
+                "image" : "http://localhost:5500/src/Assets/livre.webp"
             }
         ],
         "dragon's key" : "4" 

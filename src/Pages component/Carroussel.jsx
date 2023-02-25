@@ -1,16 +1,11 @@
 
-import Booki from "../Assets/Booki-screen.webp"
-import OhMyFood from "../Assets/OhMyFood-screen.webp"
-import LaPanthere from "../Assets/LaPanthere-screen.webp"
-import Kanap from "../Assets/Kanap-screen.webp"
-import Piiquante from "../Assets/Piiquante-screen.webp"
-import Kasa from "../Assets/Kasa-screen.webp"
+
 import { useState } from "react"
 
 
-function Carrousel({ title, description, langages }) {
-    const images = [Booki, OhMyFood, LaPanthere, Kanap, Piiquante, Kasa]
-    const [image, setImage] = useState(images);
+function Carrousel({ title, description, langages, img}) {
+
+    const [image, setImage] = useState(img);
     const [imgIndex, setimgIndex] = useState(0);
 
     function Left() {

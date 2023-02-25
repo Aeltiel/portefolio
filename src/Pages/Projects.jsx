@@ -1,7 +1,7 @@
 import NavBar from "../Layout/NavBar";
 import Footer from "../Layout/Footer";
 import Book from "../Data/book.json";
-import Presentation from "../Pages component/Présentation";
+import Presentation from "../Component/Présentation";
 import Slider from "../Component/Slider";
 import Title from "../Component/Title";
 import Container from "../Component/Container";

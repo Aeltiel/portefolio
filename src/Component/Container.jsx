@@ -4,7 +4,7 @@ function Container({image, title, description, language, id}){
     return(
         <>
             <div className={pair%2 === 0 ? "container__box" : "Twist"}>
-                <img className="container__img" src={image} alt="screen projet booki"/>
+                <img className="container__img" src={image} alt="screen ou dessin"/>
                 <div className="container__text">
                     <h3 className="container__text--title">{title}</h3>
                     <p className="container__text--description">{description}</p>

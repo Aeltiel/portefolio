@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+function AfficherNom({nom}){
+  return <image src="http://google.com" data-testid="coucou"/>
+}
+
+test("coucou", () => {
+  render(<AfficherNom nom={"Ingrid"} />)
+  expect(screen.getByTestId("coucou")).toHaveAttribute("src", "http://google.com")
+})
