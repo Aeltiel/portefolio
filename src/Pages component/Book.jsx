@@ -1,10 +1,17 @@
-function Book() {
+
+
+function Book({title}) {
+
     return (
         <div className="bookContainer">
             <div className="book">
                 <div className="book_side front">
-                    <div className="front--title"><h4>Couverture</h4></div>
-                    <i className="fa-solid fa-lock"></i>
+                    <div className="front--title"><h4>{title}</h4></div>
+                    <div className="front--icons">
+                        <i className="fa-solid fa-lock"></i>
+                        <i className="fa-solid fa-lock-open"></i>
+                    </div>
+                    
                 </div>
                 <div className="book_side back"></div>
                 <div className="book_side left"></div>

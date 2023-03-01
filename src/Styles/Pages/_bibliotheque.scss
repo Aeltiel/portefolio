@@ -6,3 +6,12 @@
    background-size: 1745px 890px;
    background-repeat:no-repeat ;
 }
+
+.library{
+    &__book{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        
+    }
+}

@@ -1,0 +1,13 @@
+.starbox{
+    height: 300px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.172);
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.172));
+    color: white;
+}
+.fa-star{
+    animation: apparition 4s infinite ease-in-out forwards;
+}

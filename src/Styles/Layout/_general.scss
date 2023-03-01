@@ -5,7 +5,11 @@ a{
     text-decoration: none;
 }
 body{
-    width: 100%;
+    width: 100%; 
+    background: url(../../Assets/fondRose.webp) no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.724);    
 }
 .homeContainer{
     font-family: 'Lora', verdana, sans-serif;
@@ -13,6 +17,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     line-height: 1.4;
+    
 }
 .projectConatainer{
     font-family: 'Lora', verdana, sans-serif;
@@ -28,10 +33,5 @@ body{
     margin-right: auto;
     line-height: 1.4;
 }
-.projectConatainer{
-    font-family: 'Lora', verdana, sans-serif;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.4;
-}
+
+

@@ -3,16 +3,22 @@
     width: $largeWidthBook;
     height: $heightBook;
     perspective: 1000px;
-    margin: auto;
     //pour faire bouger le livre sans toucher à son inclinaison, je dois mettre l'animation dans le container
-    animation: levitation 3s infinite ease-in-out alternate-reverse;
-    
+    animation: levitation 2s infinite ease-in-out alternate-reverse;
+    &:nth-child(2){
+        animation-delay: 1s;
+    }
+    &:nth-child(3){
+        animation-delay: 2s;
+    }
+    &:nth-child(4){
+        animation-delay: 3s;
+    }
 }
 .book {
     position: relative;
     transform-style: preserve-3d;
     transform : rotateX(20deg) rotateY(10deg);
-    margin: auto;
     padding-top: 150px;
     &_side {
         position: absolute;
@@ -33,8 +39,17 @@
         margin-top: 25px;
         padding-top: 5px;
         padding-bottom: 5px;
+        font-size: 15px;
         border : solid darken($gold,25%) 2px;
         border-radius: 5px;
+    }
+    &--icons{
+        position: relative;
+        & .fa-lock-open{
+            position: absolute;
+            left: 40%;
+            display: none;
+        }
     }
 }
 .back {

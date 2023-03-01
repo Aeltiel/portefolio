@@ -65,11 +65,29 @@
     }
 }
 
-@keyframes shake{
-    from{
+@keyframes shake {
+    from {
         transform: skewX(2deg);
     }
-    to{
+
+    to {
         transform: skewX(-2deg);
+    }
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(0%);
     }
 }
