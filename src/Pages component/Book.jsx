@@ -1,12 +1,11 @@
-import { useEffect, useState } from "react"
-import Carrousel from "./Carroussel"
+import Carrousel from "./Carroussel";
 import InsideBook from "./InsideBook"
 import { useDispatch, useSelector } from 'react-redux';
 import { isOpen } from "../Reduxtore/IsOpen";
 
 
 
-function Book({ title, clickFunction, content}) {
+function Book({ title}) {
     const dispatch = useDispatch();
     const open = useSelector(state => state.isopen.isOpen);
 
@@ -29,12 +28,9 @@ function Book({ title, clickFunction, content}) {
             </div>
         </div>
         {open ? <div className='library__book-ouvert'>
-                  <div className='library__book-content'>
-                    <div className="library__book-button" onClick={() => dispatch(isOpen(false))}>X</div>
-                    <div>
-                        <InsideBook/>
-                    </div>
-                  </div>
+                        <InsideBook
+                        data ={<Carrousel/>}
+                        />
                </div> : <div></div>}
         </>
     )

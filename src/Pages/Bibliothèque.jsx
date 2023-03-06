@@ -17,7 +17,7 @@ function Bibliothèque() {
       setLoading(false);
       const info = book;
       dispatch(setInfos(info))
-   }, [])
+   }, [dispatch])
 
    if (loading) {
       return (<div></div>)

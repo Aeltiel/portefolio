@@ -1,5 +1,21 @@
 .inside__Container{
-    width: 70vw;
+    width: 80vw;
     height: 70vh;
-    background-color: $gold;
+    background-color: $couverture;
+    border: solid darken($couverture, 10%) 3px;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+}
+.closeBtn{
+    position: absolute;
+    left: 96%;
+    top: 1%;
+    background-color: transparent;
+    border: none;
+    z-index: 20;
+    cursor: pointer;
+}
+.fa-xmark{
+    font-size: 1.4em;
 }

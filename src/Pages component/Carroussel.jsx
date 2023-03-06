@@ -1,54 +1,61 @@
+import { useDispatch, useSelector } from "react-redux";
+import { prochainCaroussel, precedentCaroussel } from "../Reduxtore/CarousselRedux";
 
+function Carrousel() {
+    const dispatch = useDispatch();
+    const data = useSelector(state => state.carrousel.carrouselData);
+    const index = useSelector(state => state.carrousel.carrouselIndex);
 
-import { useState } from "react"
-
-
-function Carrousel({ title, description, langages, img}) {
-
-    const [image, setImage] = useState(img);
-    const [imgIndex, setimgIndex] = useState(0);
-
-    function Left() {
-        if (imgIndex < image.length - 1) {
-            setimgIndex(imgIndex + 1)
-        } else {
-            setimgIndex(0)
+    //important : bien remettre la logique du carrousel en local en plus du store redux pour faire le calcul
+    function precedenteImage() {
+        var tailleTableau = data.length;
+        if (index > 0) {
+            return index - 1
+        }
+        else {
+            return tailleTableau - 1;
         }
     }
-    function Right() {
-        if (imgIndex > 0) {
-            setimgIndex(imgIndex - 1)
-        } else {
-            setimgIndex(image.length - 1)
+    function suivanteImage() {
+        var tailleTableau = data.length;
+        if (index < tailleTableau - 1) {
+            return index + 1;
+        }
+        else {
+            return 0;
         }
     }
 
     return (
         <>
             <div className="carrousel__Container">
-                <button className="carrousel__Left" onClick={(e) => Left()}><i className="fa-solid fa-caret-up"></i></button>
+                <button className="carrousel__Left" onClick={(e) => dispatch(precedentCaroussel(index))}><i className="fa-solid fa-caret-up"></i></button>
                 <div className="carrousel__box">
-                    <p className="carrousel__box--title">{title}</p>
-                    <p className="carrousel__box--book--description">{description}</p>
-                    <p className="carrousel__box--book--langage">{langages}</p>
-                    <img className="carrousel__box--img" src={image[imgIndex]} alt="project screen" />
+                    <h3 className="carrousel__box--title">{data[precedenteImage()].title}</h3>
+                    <div className="carrousel__box__book">
+                        <div className="carrousel__box__book--text">
+                        <p className="carrousel__box__book--description">{data[precedenteImage()].description}</p>
+                        <p className="carrousel__box__book--langage">{data[precedenteImage()].Langages}</p>
+                        </div>
+                        <img className="carrousel__box--img" src={data[precedenteImage()].image} alt="project screen" />
+                    </div>
                 </div>
 
                 <div className="carrousel__box">
-                    <p className="carrousel__box--title">{title}</p>
-                    <p className="carrousel__box--book--description">{description}</p>
-                    <p className="carrousel__box--book--langage">{langages}</p>
-                    <img className="carrousel__box--img" src={image[imgIndex]} alt="project screen" />
+                    <p className="carrousel__box--title">{data[index].title}</p>
+                    <p className="carrousel__box--book--description">{data[index].description}</p>
+                    <p className="carrousel__box--book--langage">{data[index].langages}</p>
+                    <img className="carrousel__box--img" src={data[index].image} alt="project screen" />
                 </div>
 
                 <div className="carrousel__box">
-                    <p className="carrousel__box--title">{title}</p>
-                    <p className="carrousel__box--book--description">{description}</p>
-                    <p className="carrousel__box--book--langage">{langages}</p>
-                    <img className="carrousel__box--img" src={image[imgIndex]} alt="project screen" />
+                    <p className="carrousel__box--title">{data[suivanteImage()].title}</p>
+                    <p className="carrousel__box--book--description">{data[suivanteImage()].description}</p>
+                    <p className="carrousel__box--book--langage">{data[suivanteImage()].langages}</p>
+                    <img className="carrousel__box--img" src={data[suivanteImage()].image} alt="project screen" />
                 </div>
 
-                <button className="carrousel__Right" onClick={(e) => Right()}><i className="fa-solid fa-caret-up"></i></button>
+                <button className="carrousel__Right" onClick={(e) => dispatch(prochainCaroussel(index))}><i className="fa-solid fa-caret-down"></i></button>
             </div>
         </>
     )

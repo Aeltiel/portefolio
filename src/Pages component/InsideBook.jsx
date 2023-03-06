@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react"
+import { useDispatch, useSelector } from 'react-redux';
+import { isOpen } from "../Reduxtore/IsOpen";
 
-function InsideBook({data}) {
+function InsideBook({ data }) {
+    const dispatch = useDispatch();
+    const close = useSelector(state => state.isopen.isOpen)
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -11,9 +15,12 @@ function InsideBook({data}) {
         return (<div></div>)
     } else {
         return (
-                <div className="inside__Container">
+            <>
+                {close ? <div className="inside__Container">
+                    <button className="closeBtn" onClick={() => dispatch(isOpen(false))}><i className="fa-solid fa-xmark"></i></button>
                     {data}
-                </div>
+                </div> : <div></div>}
+            </>
         )
     }
 

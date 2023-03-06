@@ -3,15 +3,12 @@ import { createSlice } from "@reduxjs/toolkit";
 export const IsOpenSlice = createSlice({
     name : "isopen",
     initialState : {
-        isOpen : false
+        isOpen : false,
     },
     reducers : {
         isOpen : (state, action) =>{
             state.isOpen = action.payload; //permet de switch de false à true
         },
-        isClose :(state, action) =>{
-            state.isClose = state;
-        }
     }
 })
 

@@ -7,7 +7,7 @@ import IsOpen from "./IsOpen";
 const Reducers = combineReducers({
     navbar: NavBarReducer,
     info: InfoReducer,
-    caroussel : CarousselReducer,
+    carrousel : CarousselReducer,
     isopen : IsOpen
 });
 export default Reducers
