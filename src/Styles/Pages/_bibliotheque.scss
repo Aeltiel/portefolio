@@ -1,9 +1,9 @@
 .background{
-    width: 1745px;
-    height: 890px;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
    background: url(../../Assets/Bibliothèque-corbeau-01.webp);
-   background-size: 1745px 890px;
+   background-size: 100vw 100vh;
    background-repeat:no-repeat ;
 }
 
@@ -12,6 +12,21 @@
         display: flex;
         justify-content: center;
         gap: 100px;
-        
+        &-ouvert {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            z-index: 20;
+        }
+        &-content {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            margin-top: 100px;
+        }
     }
 }

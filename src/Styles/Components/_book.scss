@@ -31,19 +31,20 @@
     flex-direction: column;
     gap: 50px;
     width: $largeWidthBook;
-    height: $heightBook;
+    height: ($heightBook +5);
     border: solid darken($couverture, 10%) 3px;
     background-color: $couverture;
     transform: rotateY(0deg) translateZ(11px);
     &--title{
         margin-top: 25px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding: 3px;
         font-size: 15px;
         border : solid darken($gold,25%) 2px;
         border-radius: 5px;
+        align-self: center;
     }
     &--icons{
+        align-self: center;
         position: relative;
         & .fa-lock-open{
             position: absolute;

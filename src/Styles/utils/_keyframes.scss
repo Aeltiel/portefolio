@@ -80,14 +80,32 @@
         opacity: 0;
         transform: translateY(100%);
     }
-
+    
+    25% {
+        opacity: 0.5;
+    }
+    
     50% {
         opacity: 1;
-        transform: translateY(50%);
+        
     }
-
+    
+    75% {
+        opacity: 0.5
+    }
+    
     to {
         opacity: 0;
         transform: translateY(0%);
+    }
+}
+@keyframes skale{
+    from{
+        transform: scale(0.8);
+        opacity: 0.4;
+    }
+    to{
+        transform: scale(1.2);
+        opacity: 1;
     }
 }

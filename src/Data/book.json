@@ -4,7 +4,7 @@
        "title" : "Présentation",
        "image" : "http://localhost:5500/src/Assets/moi.webp",
        "description" : "Je suis Ingrid Stemer, jeune diplômée de la formation Developpeur Web dispensée par Openclassrooms. À la recherche d'un premier emploi en tant que Développeuse Web ou Développeuse front-end, je suis motivée, sérieuse et d'une grande curiosité. Située près de Clermont-Ferrand, je peux travailler sur site ou bien de manière hybride. J'aime coder et le travail bien fait est une priorité pour moi.",
-       "dragon's key" : "1"
+       "dragonsKey" : "1"
     },
     {
         "id" : "002",
@@ -60,13 +60,13 @@
                 "Langages" : "React.js, Redux, Sass"
             }
         ],
-        "dragon's key" : "2"
+        "dragonsKey" : "2"
     },
     {
         "id" : "003",
         "title" : "Diplôme",
         "description" : "Juin 2022-Janvier 2023 : Développeur web chez Openclassrooms (bac +2)",
-        "dragon's key" : "3" 
+        "dragonsKey" : "3" 
     },
     {
         "id" : "004",
@@ -92,6 +92,6 @@
                 "image" : "http://localhost:5500/src/Assets/livre.webp"
             }
         ],
-        "dragon's key" : "4" 
+        "dragonsKey" : "4" 
     }
 ]

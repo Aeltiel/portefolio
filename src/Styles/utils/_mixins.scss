@@ -1,0 +1,8 @@
+@mixin bougie{
+    width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        position: absolute;
+        background-color: lighten($bougie, 30%);
+        animation: skale 2s infinite ease-in-out alternate-reverse;
+}

@@ -1,4 +1,5 @@
 @import './utils/variables';
+@import './utils/mixins';
 @import './utils/keyframes';
 @import './Layout/general';
 @import './Layout/navBar';
@@ -11,6 +12,8 @@
 @import './Components/slider';
 @import './Components/container';
 @import './Components/star';
+@import './Components/bougies';
+@import './Components/insideBook';
 @import './Pages/home';
 @import './Pages/project';
 @import './Pages/about';
