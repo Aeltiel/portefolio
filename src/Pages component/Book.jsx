@@ -1,25 +1,20 @@
 import { useEffect, useState } from "react"
 import Carrousel from "./Carroussel"
 import InsideBook from "./InsideBook"
+import { useDispatch, useSelector } from 'react-redux';
+import { isOpen } from "../Reduxtore/IsOpen";
+
 
 
 function Book({ title, clickFunction, content}) {
-    const [estOuvert, setEstOuvert] = useState(false)
-
-    function ouvrirLeLivre(){
-        setEstOuvert(true)
-     }
-  
-     function fermerLeLivre(){
-        setEstOuvert(false)
-     }
-
+    const dispatch = useDispatch();
+    const open = useSelector(state => state.isopen.isOpen);
 
     return (
         <>
         <div className="bookContainer">
             <div className="book">
-                <button className="book_side front" onClick={(e) => ouvrirLeLivre()}>
+                <button className="book_side front" onClick={() => dispatch(isOpen(true))}>
                     <div className="front--title"><h4>{title}</h4></div>
                     <div className="front--icons">
                         <i className="fa-solid fa-lock"></i>
@@ -33,11 +28,11 @@ function Book({ title, clickFunction, content}) {
                 <div className="book_side bottom"></div>
             </div>
         </div>
-        {estOuvert ? <div className='library__book-ouvert'>
+        {open ? <div className='library__book-ouvert'>
                   <div className='library__book-content'>
-                    <div className="library__book-button" onClick={(e) => fermerLeLivre()}>X</div>
+                    <div className="library__book-button" onClick={() => dispatch(isOpen(false))}>X</div>
                     <div>
-                        {content}
+                        <InsideBook/>
                     </div>
                   </div>
                </div> : <div></div>}
