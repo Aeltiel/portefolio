@@ -72,7 +72,7 @@ function About() {
                     <div className="about__CV">
                         <div className="about__CV--text">
                             <p >À présent que vous me connaissez un peu mieux, n'hésitez pas à repartir avec un petit souvenir en cliquant sur le bouton !</p>
-                            <a href="../Data/IngridSTEMER_DevWeb.pdf" download><Button name={"Mon CV"} /></a>
+                            <a href="../Data/Ingrid_STEMER_Dev_Junior.pdf" download><Button name={"Mon CV"} /></a>
                         </div>
                         <div className="about__CV--mail">
                             <p>Et si vous souhaitez entrer directement en contact avec moi n'hésitez pas à mécrire un <span><a href="mailto:ingrid.stemer@live.fr">mail</a></span></p>

@@ -24,6 +24,9 @@ function NavBar() {
                 <NavLink to='/Bibliotheque' className="NavActive" onClick={() => lienActif("Bibliothèque")}>
                     Bibliothèque
                 </NavLink>
+                <NavLink to='/Brouillon' className="NavActive" onClick={() => lienActif("Bibliothèque")}>
+                    Brouillon
+                </NavLink>
             </nav>
         </header>
     )

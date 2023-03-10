@@ -6,6 +6,7 @@
     margin: auto;
     margin-top: 150px;
     position: relative;
+    animation: bookOpen 1s ease-in-out backwards;
 }
 .closeBtn{
     position: absolute;

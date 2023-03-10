@@ -9,4 +9,10 @@
    font-weight: bold;
 }
 
-
+.library{
+    &__book{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+}

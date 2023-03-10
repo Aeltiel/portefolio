@@ -66,6 +66,7 @@
         "id" : "003",
         "title" : "Diplôme",
         "description" : "Juin 2022-Janvier 2023 : Développeur web chez Openclassrooms (bac +2)",
+        "image": "http://localhost:5500/src/Assets/LogoOC.webp",
         "dragonsKey" : "3" 
     },
     {
