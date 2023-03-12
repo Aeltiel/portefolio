@@ -1,4 +1,3 @@
-
 import InsideBook from "./InsideBook"
 import { useDispatch, useSelector } from 'react-redux';
 import { isOpen } from "../Reduxtore/IsOpen";

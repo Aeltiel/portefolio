@@ -1,0 +1,65 @@
+.rule{
+    &__Container{
+        width: 60vw;
+        height: 50vh;
+        position: relative;
+        background-color: $primarycolor;
+        color: white;
+        margin: auto;
+        border: 4px solid $thirdcolor;
+        border-radius: 50px;
+        animation: bookOpen 1s ease-in-out backwards;
+        &::before{
+            content: "";
+            right : 100%;
+            bottom: 14%;
+            border : solid transparent;
+            width: 0;
+            height: 0;
+            position: absolute; 
+            border-right-color: $thirdcolor;
+            border-width: 35px;
+        }
+        &::after{
+            content: "";
+            right : 100%;
+            bottom: 15%;
+            border : solid transparent;
+            width: 0;
+            height: 0;
+            position: absolute; 
+            border-right-color: $primarycolor;
+            border-width: 30px;
+        }
+    }
+    &__text1{
+        text-align: justify;
+        line-height: 125%;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    &__text2{
+        text-align: justify;
+        line-height: 120%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    &__text3{
+        text-align: center;
+        padding-top: 20px;
+    }
+    &__closeBtn{
+        position: absolute;
+        top: 4%;
+        left : 90%;
+        border: none;
+        background-color: transparent;
+        color: white;
+    }
+}
+span{
+    text-decoration: underline;
+    
+}

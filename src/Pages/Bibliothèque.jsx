@@ -5,7 +5,9 @@ import Star1 from '../Pages component/Star1';
 import Bougie from '../Pages component/Bougies';
 import Page from '../Pages component/Page';
 import Carrousel from '../Pages component/Carroussel';
-import CarrouselLoisirs from '../Pages component/CarrousselLoisirs'
+import CarrouselLoisirs from '../Pages component/CarrousselLoisirs';
+import Dbutton1 from '../Component/DkeyButton/Dbutton1';
+import Dbutton2 from '../Component/DkeyButton/Dbutton2';
 import { setInfos } from "../Reduxtore/InfoRedux";
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
@@ -28,6 +30,8 @@ function Bibliothèque() {
       return (
          <>
             <main className='background'>
+               <Dbutton1/>
+               <Dbutton2/>
                <Bougie />
                <div className='library__book'>
                   {data.map(element => {

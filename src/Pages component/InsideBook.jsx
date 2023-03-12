@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useDispatch, useSelector } from 'react-redux';
 import { isOpen } from "../Reduxtore/IsOpen";
-import Carrousel from "./Carroussel";
+
 function InsideBook({ content }) {
     const dispatch = useDispatch();
     const close = useSelector(state => state.isopen.isOpen)

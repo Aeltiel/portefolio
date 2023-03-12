@@ -1,0 +1,22 @@
+.Dbtn {
+    width: 20px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    &__img {
+        width: 20px;
+        height: 50px;
+        margin-left: -5px;
+    }
+}
+.b1{
+    transform: skewY(38deg) skewX(335deg);
+    left: 5%;
+    bottom: 42%;
+}
+.b2{
+    left: 10.5%;
+    bottom: 69%;
+    transform: rotate(-20deg);
+}
