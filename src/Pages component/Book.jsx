@@ -1,21 +1,44 @@
 import InsideBook from "./InsideBook"
 import { useDispatch, useSelector } from 'react-redux';
-import { isOpen } from "../Reduxtore/IsOpen";
-import { useState } from "react";
+import { setDragonsKey } from "../Reduxtore/IsOpen";
 
 
-function Book({ title, dkey, data }) {
+function Book({ title, dkey, data, redux, idbook }) {
     const dispatch = useDispatch();
-    const open = useSelector(state => state.isopen.isOpen);
-    const [dragonsKey, setDragonKey] = useState(null);
-
+    const dragonsKey = useSelector(state => state.isopen.dragonsKey)
+    const isUnOpen = useSelector(state => state.isopen.UnOpen)
+    const isDeuxOpen = useSelector(state => state.isopen.DeuxOpen)
+    const isTroisOpen = useSelector(state => state.isopen.TroisOpen)
+    const isQuatreOpen = useSelector(state => state.isopen.QuatreOpen)
+    
 //fonction pour vérifier la dragonskey et faire en sorte que seul le livre associer 
 //à la key s'ouvre afin d'éviter que tout s'ouvre en même temps
     function check() {
-        if (dragonsKey === dkey && open) {
+        if (dragonsKey === dkey && isUnOpen){
             return (
                 <div className='ouvert'>
-                    <InsideBook content={data} />
+                    <InsideBook idbook={idbook} content={data} />
+                </div>
+            )
+        }
+        else if (dragonsKey === dkey && isDeuxOpen){
+            return (
+                <div className='ouvert'>
+                    <InsideBook idbook={idbook} content={data} />
+                </div>
+            )
+        }
+        else if (dragonsKey === dkey && isTroisOpen){
+            return (
+                <div className='ouvert'>
+                    <InsideBook idbook={idbook} content={data} />
+                </div>
+            )
+        }
+        else if (dragonsKey === dkey && isQuatreOpen){
+            return (
+                <div className='ouvert'>
+                    <InsideBook idbook={idbook} content={data} />
                 </div>
             )
         }
@@ -23,11 +46,13 @@ function Book({ title, dkey, data }) {
 console.log(dragonsKey)
 
 //setDragonKey(dkey) dans on click permet le clic sélectif
+//ligne 54 : redux() : permet de faire l'ouverture et la fermeture depuis la page bibliothèque
+//avec le state correspondant à chaque livre.
     return (
         <>
             <div className="bookContainer">
                 <div className="book">
-                    <button className="book_side front" onClick={() => {dispatch(isOpen(true)); setDragonKey(dkey)}}>
+                    <button className="book_side front" onClick={() => {redux(); dispatch(setDragonsKey(dkey))}}>
                         <div className="front--title"><h4>{title}</h4></div>
                         <div className="front--icons">
                             <i className="fa-solid fa-lock"></i>
@@ -46,6 +71,3 @@ console.log(dragonsKey)
     )
 }
 export default Book
-/*open ? <div className='ouvert'>
-                <InsideBook content={data}/>
-               </div> : <div></div>*/
