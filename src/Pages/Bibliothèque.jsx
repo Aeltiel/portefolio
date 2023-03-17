@@ -38,77 +38,77 @@ function Bibliothèque() {
                <Dbutton3/>
                <Dbutton4/>
                <Bougie />
-               <div className='library__book'>
-                  {data.map(element => {
-                     switch(element.id){
-                        case "001" :
-                           return (
-                              <Book
-                                 key={element.id}
-                                 title={element.title}
-                                 dkey={element.dragonsKey}
-                                 redux={(e) => dispatch(UnOpen(true))}
-                                 idbook={element.id}
-                                 data={<Page
-                                    img={element.image}
+                  <div className='library__book'>
+                     {data.map(element => {
+                        switch (element.id) {
+                           case "001":
+                              return (
+                                 <Book
+                                    key={element.id}
                                     title={element.title}
-                                    text={element.description}
-                                 />}
-                              />
-                           );
-                           break;
-                        case "002" :
-                           return (
-                              <Book
-                                 key={element.id}
-                                 dkey={element.dragonsKey}
-                                 title={element.title}
-                                 idbook={element.id}
-                                 redux={(e) => dispatch(DeuxOpen(true))}
-                                 data={<Carrousel/>}
-                              />
-                           )
-                           break;
-                        case "003" :
-                           return (
-                              <Book
-                                 key={element.id}
-                                 dkey={element.dragonsKey}
-                                 title={element.title}
-                                 idbook={element.id}
-                                 redux={(e) => dispatch(TroisOpen(true))}
-                                 data={<Page
-                                    img={element.image}
+                                    dkey={element.dragonsKey}
+                                    redux={(e) => dispatch(UnOpen(true))}
+                                    idbook={element.id}
+                                    data={<Page
+                                       img={element.image}
+                                       title={element.title}
+                                       text={element.description}
+                                    />}
+                                 />
+                              );
+                              break;
+                           case "002":
+                              return (
+                                 <Book
+                                    key={element.id}
+                                    dkey={element.dragonsKey}
                                     title={element.title}
-                                    text={element.description}
-                                 />}
-                              />
-                           )
-                           break;
-                        case "004" :
-                           return (
-                              <Book
-                                 key={element.id}
-                                 dkey={element.dragonsKey}
-                                 title={element.title}
-                                 idbook={element.id}
-                                 redux={(e) => dispatch(QuatreOpen(true))}
-                                 data={<CarrouselLoisirs/>}
-                              />
-                           )
-                           break;
-                        
-                        default :
-                           console.log("Coucou")
-                     }
-                  })}
-               </div>
-               <Link to='/'>
-                  <div className='library__teleport'>
-                     <Star />
-                     <Star1 />
+                                    idbook={element.id}
+                                    redux={(e) => dispatch(DeuxOpen(true))}
+                                    data={<Carrousel />}
+                                 />
+                              )
+                              break;
+                           case "003":
+                              return (
+                                 <Book
+                                    key={element.id}
+                                    dkey={element.dragonsKey}
+                                    title={element.title}
+                                    idbook={element.id}
+                                    redux={(e) => dispatch(TroisOpen(true))}
+                                    data={<Page
+                                       img={element.image}
+                                       title={element.title}
+                                       text={element.description}
+                                    />}
+                                 />
+                              )
+                              break;
+                           case "004":
+                              return (
+                                 <Book
+                                    key={element.id}
+                                    dkey={element.dragonsKey}
+                                    title={element.title}
+                                    idbook={element.id}
+                                    redux={(e) => dispatch(QuatreOpen(true))}
+                                    data={<CarrouselLoisirs />}
+                                 />
+                              )
+                              break;
+
+                           default:
+                              console.log("Coucou")
+                        }
+                     })}
                   </div>
-               </Link>
+                  <Link to='/'>
+                     <div className='library__teleport'>
+                        <Star />
+                        <Star1 />
+                     </div>
+                  </Link>
             </main>
          </>
       )

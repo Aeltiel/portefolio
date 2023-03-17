@@ -3,7 +3,7 @@ function Container({image, title, description, language, id}){
     const pair = parseInt(id);
     return(
         <>
-            <div className={pair%2 === 0 ? "container__box" : "Twist"}>
+            <div className={pair % 2 === 0 ? "container__box" : "Twist"}>
                 <img className="container__img" src={image} alt="screen ou dessin"/>
                 <div className="container__text">
                     <h3 className="container__text--title">{title}</h3>

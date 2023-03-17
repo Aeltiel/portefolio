@@ -7,7 +7,9 @@
     margin-top: 150px;
     position: relative;
     animation: bookOpen 1s ease-in-out backwards;
+    z-index: 100;
 }
+
 .closeBtn{
     position: absolute;
     left: 96%;
@@ -17,6 +19,7 @@
     z-index: 20;
     cursor: pointer;
 }
+
 .fa-xmark{
     font-size: 1.4em;
 }

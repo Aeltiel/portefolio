@@ -6,14 +6,14 @@ export const ButtonSlice = createSlice({
         keyOne : false,
         keyTwo : false,
         keyThree : false,
-        keyFour : false
+        keyFour : false,
     },
     reducers : {
         keyOne : (state, action) =>{
             state.keyOne = action.payload; //permet de vérouillé/dévérouiller les state open des livres
         },
         keyTwo : (state, action) =>{
-            state.keyTwo = action.payload;
+             state.keyTwo = action.payload;
         },
         keyThree : (state, action) =>{
             state.keyThree = action.payload;
