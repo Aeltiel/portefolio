@@ -1,12 +1,14 @@
+import book from '../Data/book.json';
+import Rules from '../Pages component/Rules';
 import Book1 from '../Pages component/Book 1';
 import Book2 from '../Pages component/Book 2';
 import Book3 from '../Pages component/Book 3';
 import Book4 from '../Pages component/Book 4';
-import book from '../Data/book.json';
 import Star from '../Pages component/Star';
 import Star1 from '../Pages component/Star1';
 import Bougie from '../Pages component/Bougies';
 import Page from '../Pages component/Page';
+import PagePresentation from '../Pages component/PagePresentation';
 import Carrousel from '../Pages component/Carroussel';
 import CarrouselLoisirs from '../Pages component/CarrousselLoisirs';
 import Dbutton1 from '../Component/DkeyButton/Dbutton1';
@@ -53,7 +55,7 @@ function Bibliothèque() {
                                     dkey={element.dragonsKey}
                                     redux={(e) => dispatch(UnOpen(true))}
                                     idbook={element.id}
-                                    data={<Page
+                                    data={<PagePresentation
                                        img={element.image}
                                        title={element.title}
                                        text={element.description}
@@ -107,7 +109,8 @@ function Bibliothèque() {
                         }
                      })}
                   </div>
-                  <Link to='/'>
+                  <Rules/>
+                  <Link to='/Home'>
                      <div className='library__teleport'>
                         <Star />
                         <Star1 />

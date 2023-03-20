@@ -74,6 +74,16 @@ a {
         margin-right: auto;
         margin-top: 50px;
         gap: 50px;
+        &--profil{
+            & p{
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            & a{
+                display: flex;
+                justify-content: center;
+            }
+        }
         &--text{
             & p{
                 margin-bottom: 30px;

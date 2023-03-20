@@ -2,6 +2,7 @@ import NavBar from "../Layout/NavBar";
 import Footer from "../Layout/Footer";
 import Title from "../Component/Title";
 import Presentation from "../Component/Présentation";
+import Reseaux from "../Component/Reseaux";
 import Container from "../Component/Container";
 import Button from "../Component/Button";
 import Book from "../Data/book.json";
@@ -37,12 +38,7 @@ function About() {
                             title={data[0].title}
                             description={data[0].description}
                         />
-                        <p className="presentation__reseaux">
-                            Retrouvez moi sur
-                            <a href="https://www.linkedin.com/in/ingrid-stemer-0b4526227/"><i className="fa-brands fa-linkedin"></i></a>
-                            <a href="https://www.instagram.com/aeltielnh/"><i className="fa-brands fa-instagram"></i></a>
-                            <a href="https://github.com/Aeltiel"><i className="fa-brands fa-github"></i></a>
-                        </p>
+                        <Reseaux/>
                     </div>
 
                     <div className="about__diplome">
@@ -70,6 +66,10 @@ function About() {
                     </div>
 
                     <div className="about__CV">
+                        <div className="about__CV--profil">
+                            <p>Vous souhaitez connaitre mon portentiel pour travailler dans votre entreprise ? Je vous propose de jeter un oeil sur mon profil AssessFirst</p>
+                            <a href="../Data/AssestFirst_profil.pdf" download><Button name={"Mon profil AssessFirst"}/></a>
+                        </div>
                         <div className="about__CV--text">
                             <p >À présent que vous me connaissez un peu mieux, n'hésitez pas à repartir avec un petit souvenir en cliquant sur le bouton !</p>
                             <a href="../Data/Ingrid_STEMER_Dev_Junior.pdf" download><Button name={"Mon CV"} /></a>
