@@ -1,4 +1,7 @@
-import Book from '../Pages component/Book';
+import Book1 from '../Pages component/Book 1';
+import Book2 from '../Pages component/Book 2';
+import Book3 from '../Pages component/Book 3';
+import Book4 from '../Pages component/Book 4';
 import book from '../Data/book.json';
 import Star from '../Pages component/Star';
 import Star1 from '../Pages component/Star1';
@@ -15,6 +18,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { UnOpen, DeuxOpen, TroisOpen, QuatreOpen } from '../Reduxtore/IsOpen';
+
 
 function Bibliothèque() {
    const dispatch = useDispatch();
@@ -43,7 +47,7 @@ function Bibliothèque() {
                         switch (element.id) {
                            case "001":
                               return (
-                                 <Book
+                                 <Book1
                                     key={element.id}
                                     title={element.title}
                                     dkey={element.dragonsKey}
@@ -59,7 +63,7 @@ function Bibliothèque() {
                               break;
                            case "002":
                               return (
-                                 <Book
+                                 <Book2
                                     key={element.id}
                                     dkey={element.dragonsKey}
                                     title={element.title}
@@ -71,7 +75,7 @@ function Bibliothèque() {
                               break;
                            case "003":
                               return (
-                                 <Book
+                                 <Book3
                                     key={element.id}
                                     dkey={element.dragonsKey}
                                     title={element.title}
@@ -87,7 +91,7 @@ function Bibliothèque() {
                               break;
                            case "004":
                               return (
-                                 <Book
+                                 <Book4
                                     key={element.id}
                                     dkey={element.dragonsKey}
                                     title={element.title}

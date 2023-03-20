@@ -2,7 +2,7 @@ import Dkeyimg from '../../Assets/Dragon_s-Key-01.webp'
 import { useDispatch} from 'react-redux'
 import { keyThree} from '../../Reduxtore/ButtonRedux';
 
-function Dbutton3({dkey}) {
+function Dbutton3() {
     const dispatch = useDispatch();
 
     return (

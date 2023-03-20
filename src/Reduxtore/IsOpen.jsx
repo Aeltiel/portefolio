@@ -28,7 +28,7 @@ export const IsOpenSlice = createSlice({
         },
         setDragonsKey : (state, action) => {
             state.dragonsKey = action.payload; //met à jour la clé du livre
-        }
+        },
     }
 })
 

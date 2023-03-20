@@ -6,36 +6,12 @@ import { setDragonsKey } from "../Reduxtore/IsOpen";
 function Book({ title, dkey, data, redux, idbook }) {
     const dispatch = useDispatch();
     const dragonsKey = useSelector(state => state.isopen.dragonsKey)
-    const keyOne = useSelector(state => state.button.keyOne)
-    const keyTwo = useSelector(state => state.button.keyTwo)
-    const keyThree = useSelector(state => state.button.keyThree)
     const keyFour = useSelector(state => state.button.keyFour)
 
 //fonction pour vérifier la dragonskey et faire en sorte que seul le livre associer 
 //à la key s'ouvre afin d'éviter que tout s'ouvre en même temps
     function check() {
-        if (dragonsKey === dkey && keyOne){
-            return (
-                <div className='ouvert'>
-                    <InsideBook idbook={idbook} content={data} />
-                </div>
-            )
-        }
-        else if (dragonsKey === dkey && keyTwo){
-            return (
-                <div className='ouvert'>
-                    <InsideBook idbook={idbook} content={data} />
-                </div>
-            )
-        }
-        else if (dragonsKey === dkey && keyThree){
-            return (
-                <div className='ouvert'>
-                    <InsideBook idbook={idbook} content={data} />
-                </div>
-            )
-        }
-        else if (dragonsKey === dkey && keyFour){
+        if (dragonsKey === dkey && keyFour){
             return (
                 <div className='ouvert'>
                     <InsideBook idbook={idbook} content={data} />
@@ -45,13 +21,7 @@ function Book({ title, dkey, data, redux, idbook }) {
     }
 
     function unlock(){
-        if(keyOne === true){
-           return(<i className="fa-solid fa-lock-open"></i>) 
-        } else if (keyTwo === true){
-            return(<i className="fa-solid fa-lock-open"></i> ) 
-        }else if (keyThree === true){
-            return(<i className="fa-solid fa-lock-open"></i> ) 
-        }else if (keyFour === true){
+         if (keyFour){
             return(<i className="fa-solid fa-lock-open"></i> ) 
         }else{
             return (<i className="fa-solid fa-lock"></i>)
