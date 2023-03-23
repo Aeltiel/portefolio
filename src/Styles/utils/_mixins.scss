@@ -5,4 +5,33 @@
         position: absolute;
         background-color: lighten($bougie, 30%);
         animation: skale 2s infinite ease-in-out alternate-reverse;
+        @include TabletteLand{
+            width : 30px;
+            height: 30px;
+        }
 }
+
+//mediaqueries
+@mixin Mobile{
+    @media screen and (min-width : 360px) and (max-width : 425px){
+        @content
+    }
+};
+
+@mixin TabletteLand{
+    @media only screen and (min-width : 767px) and (max-width : 1200px) and (orientation : landscape){
+        @content
+    }
+};
+
+@mixin Tablette{
+    @media screen and (min-width : 700px) and (max-width : 1200px) {
+        @content
+    }
+}
+
+@mixin Desktop{
+    @media screen and (min-width : 901px) and (max-width : 1550px){
+        @content
+    }
+};

@@ -8,6 +8,10 @@
         margin-top: 50px;
         display: flex;
         gap: 50px;
+        @include Tablette{
+           flex-wrap: wrap;
+           height: 800px;
+        }
     }
 
     &__img {
@@ -18,11 +22,22 @@
         border-radius: 40px;
         box-shadow: -10px 5px 8px $secondarycolor;
         align-self: center;
+        @include TabletteLand{
+            width: 400px;
+            height: 350px;
+        }
+        @include Tablette{
+            width: 600px;
+            height: 350px;
+        }
     }
 
     &__text {
         text-align: justify;
         align-self: center;
+        @include TabletteLand{
+            font-size: 14px;
+        }
         &--title {
             text-align: center;
             text-decoration: underline;
@@ -51,4 +66,11 @@
     margin-right: auto;
     margin-top: 50px;
     gap: 50px;
+    @include TabletteLand{
+        font-size: 14px;
+    }
+    @include Tablette{
+        height: 700px;
+        flex-wrap: wrap;
+     }
 }

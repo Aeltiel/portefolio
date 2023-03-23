@@ -8,6 +8,9 @@
         margin: auto;
         margin-top: 0.5%;
         position: relative;
+        @include TabletteLand{
+            font-size: 14px;
+        }
     }
     
     &__box {
@@ -65,8 +68,6 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
-        
-
     }
 }
 
@@ -79,3 +80,10 @@
     transform: rotate(-90deg);
     font-size: 1.2em;
 }
+
+/*.boxLeft{
+    animation: transitLeft 1s ease-in-out;
+}
+.boxRight{
+    animation: transitRight 1s ease-in-out ;
+}*/

@@ -12,7 +12,7 @@ function NavBar() {
     return (
         <header>
             <nav>
-                <NavLink to='/' className="NavActive" onClick={() => lienActif("Accueil")}>
+                <NavLink to='/Home' className="NavActive" onClick={() => lienActif("Accueil")}>
                     Accueil
                 </NavLink>
                 <NavLink to='/Projects' className="NavActive" onClick={() => lienActif("Projets")}>

@@ -18,6 +18,10 @@
         border: 3px solid $primarycolor;
         border-radius: 100px;
         object-fit: cover ;
+        @include TabletteLand{
+            width: 25vw;
+            height: 35vh;
+        }
     }
 
     &__content {
@@ -26,12 +30,18 @@
         margin-right: 40px;
         margin-top: 30px;
         line-height: 125%;
+        @include TabletteLand{
+            font-size: 14px;
+        }
         &--title{
             text-align: center;
             text-decoration: underline;
             text-decoration-color: $primarycolor;
             font-size: 2em;
             margin-bottom: 20px;
+            @include TabletteLand{
+                font-size: 1.5em;
+            }
         }
         &--text{
             text-align: justify;
@@ -46,6 +56,9 @@
         margin-left: 40px;
         margin-right: 40px;
         gap : 20px;
+        @include TabletteLand{
+            font-size: 14px;
+        }
         &--profil{
             text-align: center;
             & p{

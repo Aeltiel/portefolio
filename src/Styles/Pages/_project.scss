@@ -22,10 +22,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include Tablette{
+            height: 300px;
+        }
     }
 
     &__detail {
         margin-top: 100px;
+        @include Tablette{
+            margin-top: 50px;
+        }
     }
 
     &__cta {

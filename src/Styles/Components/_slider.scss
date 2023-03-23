@@ -5,6 +5,14 @@
     margin-right: auto;
     border: 3px solid $primarycolor;
     overflow: hidden;
+    @include TabletteLand{
+        max-width: 400px;
+        max-height: 300px;
+    }
+    @include Tablette{
+        max-width: 300px;
+        max-height: 150px;
+    }
     & .slider{
         display: flex;
         animation: slider 15s infinite ease-in-out;

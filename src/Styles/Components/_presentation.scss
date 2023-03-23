@@ -6,12 +6,16 @@
     margin-top: 25px;
     justify-content: center;
     gap : 80px;
+    
     &__title{
         text-align: center;
         text-decoration: underline;
         text-decoration-color: $secondarycolor;
         color: $primarycolor;
         line-height: 3;
+        @include Tablette{
+        font-size: 18px;
+    }
     }
     &__text{
         width: 75%;

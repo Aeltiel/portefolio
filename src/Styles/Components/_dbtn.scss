@@ -10,6 +10,14 @@
         height: 50px;
         margin-left: -5px;
     }
+    @include TabletteLand{
+        width: 15px;
+        height: 45px;
+        &__img{
+            width: 15px;
+            height: 45px;
+        }
+    }
 }
 .b1{
     transform: skewY(38deg) skewX(335deg);
@@ -25,6 +33,9 @@
     left: 63%;
     bottom: 35.5%;
     transform: rotate(90deg);
+    @include TabletteLand{
+        bottom: 35%;
+    }
 }
 .b4{
     left: 58%;

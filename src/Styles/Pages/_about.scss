@@ -74,6 +74,9 @@ a {
         margin-right: auto;
         margin-top: 50px;
         gap: 50px;
+        @include Tablette{
+            flex-wrap: wrap;
+        }
         &--profil{
             & p{
                 margin-bottom: 30px;

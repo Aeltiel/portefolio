@@ -29,7 +29,7 @@
                 "id":"3",
                 "title": "La Panthère",
                 "image" : "http://localhost:5500/src/Assets/LaPanthere-screen.webp",
-                "description": "Le but de ce projet est de se former aux principes du SEO et d'optimisation du site. Ainsi je devais auditer le site afin de connaitre ces performances et examiner le code pour l'optimiser et retirer tout ce qui est reconnu comme des techniques de Black Hat (comme mettre en tout petit et de la même couleur que le fond des mots-clés par exemple), assurrer l'accessibilité du site en faisant en sorte qu'il n'y a pas de texte important dans les images, en veillant à ce que le texte soit de la bonne taille, et que les contrastes soient suffisants. Pour finir un petit peu d'optimisation, notamment sur les images pour qu'elles aient le format approprié pour un site internet" 
+                "description": "Le but de ce projet est de se former aux principes du SEO et d'optimisation du site. Ainsi je devais auditer le site afin de connaitre ces performances et examiner le code pour l'optimiser et retirer tout ce qui est reconnu comme des techniques de Black Hat (comme mettre en tout petit et de la même couleur que le fond des mots-clés par exemple), assurer l'accessibilité du site en faisant en sorte qu'il n'y a pas de texte important dans les images, en veillant à ce que le texte soit de la bonne taille, et que les contrastes soient suffisants. Pour finir un petit peu d'optimisation, notamment sur les images pour qu'elles aient le format approprié pour un site internet" 
             },
             {
                 "id":"4",
