@@ -21,6 +21,9 @@
     @include TabletteLand{
         perspective: 3000px;
     }
+    @include Mobile{
+        display: none;
+    }
 }
 
 .book {

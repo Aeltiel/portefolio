@@ -3,6 +3,9 @@
         @include Tablette{
             display: none;
         }
+        @include Mobile{
+            display: none;
+        }
         z-index: 40;
         width: 50%;
         min-height: 40%;
@@ -68,6 +71,7 @@
         &__Container{
             margin-top: 0;
             height: 60%;
+            display: block;
         }
     }
 }

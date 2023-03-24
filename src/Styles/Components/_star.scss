@@ -9,6 +9,9 @@
     position: absolute;
     left: 82%;
     top: 35%;
+    @include Mobile{
+        display: none;
+    }
 }
 .fa-star{
     opacity: 0;

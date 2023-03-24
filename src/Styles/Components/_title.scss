@@ -2,10 +2,21 @@
     text-align: center;
         margin-bottom: 100px;
         color: $secondarycolor;
+        @include Mobile{
+            font-size: 1em;
+            margin-bottom: 50px;
+        }
+        @include Tablette{
+            font-size: 1.5em;
+        }
 }
 .fa-fan{
     padding-right: 15px;
     padding-left: 15px;
     color: $thirdcolor;
     animation: rotate 2s linear infinite;
+    @include Mobile{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }

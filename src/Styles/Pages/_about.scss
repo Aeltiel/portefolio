@@ -8,6 +8,9 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 70px;
+    @include Mobile{
+        gap: 20px;
+    }
 }
 
 .presentation {
@@ -19,7 +22,10 @@ a {
         display: flex;
         align-items: center;
         gap: 40px;
-
+        @include Mobile{
+            flex-direction: column;
+            gap: 5px;
+        }
         & a {
             font-size: 3em;
         }
@@ -44,6 +50,9 @@ a {
         grid-template-rows: 1fr 1fr;
         background-color: $thirdcolor;
         margin-top: 100px;
+        @include Mobile{
+            margin-top: 40px;
+        }
         &--img{
             width: 50px;
             height: 50px;
@@ -55,6 +64,9 @@ a {
             align-self: center;
             justify-content: end;
             margin-top: 0;
+            @include Mobile{
+                justify-content: flex-start;
+            }
             &__title{
                 grid-column: 1/3;
             }
@@ -63,6 +75,9 @@ a {
     }
     &__loisirs{
         margin-top: 100px;
+        @include Mobile{
+            margin-top: 40px;
+        }
         & .presentation{
             width: 90%;
         }
@@ -76,6 +91,10 @@ a {
         gap: 50px;
         @include Tablette{
             flex-wrap: wrap;
+        }
+        @include Mobile{
+            flex-wrap: wrap;
+            font-size: 14px;
         }
         &--profil{
             & p{

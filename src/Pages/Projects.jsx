@@ -1,4 +1,5 @@
 import NavBar from "../Layout/NavBar";
+import NavBarMobile from "../Layout/NavBarMobile";
 import Footer from "../Layout/Footer";
 import Book from "../Data/book.json";
 import Presentation from "../Component/Présentation";
@@ -29,6 +30,7 @@ function Projects() {
         return (
             <>
                 <NavBar />
+                <NavBarMobile/>
                 <main className="projectConatainer" key={data.id}>
                     <Title title={"Bienvenue dans ma galerie de projets !"} />
                     <div className="project__icons">

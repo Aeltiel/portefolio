@@ -1,6 +1,7 @@
 import moi from "../Assets/moi.webp"
 import Corbeau from "../Assets/Corbeau-sur-crâne-01.webp"
 import NavBar from "../Layout/NavBar";
+import NavBarMobile from "../Layout/NavBarMobile";
 import Footer from "../Layout/Footer";
 import Slider from "../Component/Slider";
 import Button from "../Component/Button";
@@ -11,6 +12,7 @@ function Home() {
     return (
         <>
             <NavBar />
+            <NavBarMobile/>
             <main className="homeContainer">
                 <Title title={"Bienvenue dans mon portefolio !"}/>
 

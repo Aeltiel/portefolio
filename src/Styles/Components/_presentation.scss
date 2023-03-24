@@ -1,32 +1,52 @@
-.presentation{
+.presentation {
     width: 100%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
     justify-content: center;
-    gap : 80px;
+    gap: 80px;
+    @include Mobile{
+        gap: 20px;
+        width: 90%;
+    }
     
-    &__title{
+    &__title {
         text-align: center;
         text-decoration: underline;
         text-decoration-color: $secondarycolor;
         color: $primarycolor;
         line-height: 3;
-        @include Tablette{
-        font-size: 18px;
+        
+        @include Tablette {
+            font-size: 18px;
+        }
+        @include Mobile{
+            margin-right: 3%;
+            font-size: 1em;
+        }
     }
-    }
-    &__text{
+
+    &__text {
         width: 75%;
         text-align: center;
+        @include Mobile{
+            text-align: justify;
+            width: 90%;
+            font-size: 14px;
+        }
     }
-    &__img{
-        width : 200px;
+
+    &__img {
+        width: 200px;
         height: 200px;
         border-radius: 50%;
         object-fit: cover;
         border: solid 5px $primarycolor;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        @include Mobile{
+            width: 150px;
+            height: 150px;
+        }
     }
 }

@@ -1,4 +1,5 @@
 import NavBar from "../Layout/NavBar";
+import NavBarMobile from "../Layout/NavBarMobile";
 import Footer from "../Layout/Footer";
 import Title from "../Component/Title";
 import Presentation from "../Component/Présentation";
@@ -30,6 +31,7 @@ function About() {
         return (
             <>
                 <NavBar />
+                <NavBarMobile/>
                 <main className="aboutContainer">
                     <Title title={"Prenez le temps de me connaitre"} />
                     <div className="presentationContainer">

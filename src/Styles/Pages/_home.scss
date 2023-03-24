@@ -13,6 +13,14 @@
         @include Tablette{
             grid-template-columns: 500px 300px;
         }
+        @include Mobile{
+            grid-template-columns: 100%;
+            margin-top: 70px;
+            height: 400px;
+        }
+        @include Desktop{
+            grid-template-columns: 1000px 400px;
+        }
         &__text{
             grid-row-end: 1;
             align-self: center;
@@ -33,6 +41,15 @@
                 margin-right: 100px;
                 margin-left: 100px;
             }
+            @include Mobile{
+                margin-left: 5%;
+                margin-right: 5%;
+                font-size: 14px;
+            }
+            @include Desktop{
+                margin-left: 150px;
+                margin-right: 150px;
+            }
             & ::before{
                 content: "";
                 left : 100%;
@@ -43,6 +60,9 @@
                 position: absolute; 
                 border-left-color: $thirdcolor;
                 border-width: 35px;
+                @include Mobile{
+                    display: none;
+                }
             }
             &::after{
                 content: "";
@@ -57,6 +77,9 @@
                 @include Tablette{
                     bottom: 14%;
                     left: 99%;
+                }
+                @include Mobile{
+                    display: none;
                 }
             }
             &--text--1{
@@ -78,6 +101,9 @@
                 width: 250px;
                 height: 500px;
             }
+            @include Mobile{
+                display: none;
+            }
         }
     }
     &__project{
@@ -85,6 +111,13 @@
         justify-content: space-around;
         margin-top: 150px;
         margin-bottom: 100px;
+        @include Mobile{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            flex-wrap: wrap-reverse;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
         &__container{
             width: 800px;
             @include TabletteLand{
@@ -95,16 +128,37 @@
                 width: 500px;
                 font-size: 14px;
             }
+            @include Mobile{
+                width: 100%;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            @include Desktop{
+                width: 700px;
+            }
         }
         &--text{
             text-align: center;
             font-size: 1.2em;
+            @include Tablette{
+                font-size: 1em;
+            }
+            @include Mobile {
+                font-size: 14px;
+            }
+            @include Desktop{
+                font-size: 1em;
+            }
         }
         &__btn{
             margin-top: 50px;
             margin-left: 25%;
             @include Tablette{
                 margin-left: 20%;
+            }
+            @include Mobile{
+                margin-left: 20%;
+                margin-top: 20px;
             }
         }
     }

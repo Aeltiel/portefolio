@@ -1,6 +1,7 @@
 .portail {
     &__Container {
         display: none;
+
         @include Tablette {
             display: block;
             z-index: 40;
@@ -14,6 +15,7 @@
             border: 4px solid $thirdcolor;
             border-radius: 50px;
             animation: bookOpen 1s ease-in-out backwards;
+
             &::before {
                 content: "";
                 right: 100%;
@@ -38,7 +40,47 @@
                 border-width: 30px;
             }
         }
+
+        @include Mobile {
+            display: block;
+            z-index: 40;
+            width: 75%;
+            height: 300px;
+            position: relative;
+            margin-left: 14%;
+            margin-top: 70%;
+            background-color: $primarycolor;
+            color: white;
+            border: 4px solid $thirdcolor;
+            border-radius: 50px;
+            animation: bookOpen 1s ease-in-out backwards;
+
+            &::before {
+                content: "";
+                bottom: 100%;
+                left: 50%;
+                border: solid transparent;
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-bottom-color: $thirdcolor;
+                border-width: 35px;
+            }
+
+            &::after {
+                content: "";
+                bottom: 100%;
+                left: 51.5%;
+                border: solid transparent;
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-bottom-color: $primarycolor;
+                border-width: 30px;
+            }
+        }
     }
+
     &__text1 {
         text-align: justify;
         line-height: 125%;
@@ -46,11 +88,25 @@
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 40px;
+
+        @include Mobile {
+            font-size: 12px;
+        }
     }
-    &__list{
-        & a{
+
+    &__list {
+        @include Mobile {
+            font-size: 12px;
+            padding-right: 30px;
+        }
+
+        & a {
             color: white;
             text-decoration: underline;
+
+            @include Mobile {
+                font-size: 12px;
+            }
         }
     }
 
@@ -62,19 +118,54 @@
         background-color: transparent;
         color: white;
         cursor: pointer;
+
+        @include Mobile {
+            left: 85%;
+        }
     }
-    &__img{
-        width: 300px;
-        position: absolute;
-        top: 38%;
+
+    &__img {
+        display: none;
+
+        @include Tablette {
+            width: 300px;
+            position: absolute;
+            top: 38%;
+        }
+
+        @include Mobile {
+            display: block;
+            width: 300px;
+            position: absolute;
+            top: 10%;
+        }
     }
 }
 
-.containerPortail{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 50;
-    top: 0%;
-    backdrop-filter: blur(8px);
+.containerPortail {
+    display: none;
+
+    @include Tablette {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 50;
+        top: 0%;
+        backdrop-filter: blur(8px);
+    }
+
+    @include TabletteLand {
+        display: none;
+    }
+
+    @include Mobile {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 50;
+        top: 0%;
+        backdrop-filter: blur(8px);
+    }
 }
