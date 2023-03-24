@@ -41,3 +41,36 @@
     left: 58%;
     bottom: 10%;
 }
+.hideDbtn{
+    width: 20px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    z-index: 20;
+    animation: hide 1s ease-in forwards;
+    &__img {
+        width: 20px;
+        height: 50px;
+        margin-left: -5px;
+    }
+    & .b1{
+        transform: skewY(38deg) skewX(335deg);
+        left: 5%;
+        bottom: 42%; 
+    }
+    & .b2{
+        left: 10.5%;
+        bottom: 69%;
+        transform: rotate(-20deg);
+    }
+    & .b3{
+        left: 63%;
+        bottom: 35.5%;
+        transform: rotate(90deg);
+    }
+    & .b4{
+        left: 58%;
+        bottom: 10%;
+    }
+}
