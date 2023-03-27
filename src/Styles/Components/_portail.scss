@@ -128,6 +128,7 @@
         display: none;
 
         @include Tablette {
+            display: block;
             width: 300px;
             position: absolute;
             top: 38%;
