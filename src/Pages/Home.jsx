@@ -18,7 +18,7 @@ function Home() {
 
                 <div className="presentation">
                     <img className="presentation__img" src={moi} alt="Ingrid Stemer" />
-                    <h2 className="presentation__title">Ingrid STEMER <br /> Développeuse Web/Développeuse front-end</h2>
+                    <h2 className="presentation__title">Ingrid STEMER <br /> Concepteur Développeur d'Application en Alternance</h2>
                 </div>
 
                 <div className="home__info">

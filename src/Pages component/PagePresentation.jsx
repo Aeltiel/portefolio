@@ -20,7 +20,7 @@ function Page({ img, text, title }) {
                 </div>
                 <div className="page__CV--text">
                     <p >À présent que vous me connaissez un peu mieux, n'hésitez pas à repartir avec un petit souvenir en cliquant sur le bouton !</p>
-                    <a href="/DataPdf/Ingrid_STEMER_Dev_Junior.pdf" download><Button name={"Mon CV"} /></a>
+                    <a href="/DataPdf/Ingrid_STEMER_CDA_Alternance.pdf" download><Button name={"Mon CV"} /></a>
                 </div>
 
             </div>
