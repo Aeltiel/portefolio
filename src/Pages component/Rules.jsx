@@ -23,7 +23,8 @@ function Rules(){
                 Mais rassurez-vous elles sont uniquement dans cette pièce !
             </p>
             <p className="rule__text2">
-                Oh ! Et j'allais oublier, si vous le souhaitez, vous pouvez quitter la Bibliothèque en
+                Oh ! Et j'allais oublier, si vous le souhaitez, vous pouvez consulter les dernières activités de ma Maitresse en 
+                regardant sur le parchemin qui est sur la table. Vous pouvez également quitter la Bibliothèque en
                 passant par le portail qui se trouve sur la dalle bleue à votre droite.
             </p>
             <p className="rule__text3">

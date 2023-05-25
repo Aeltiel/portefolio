@@ -5,6 +5,8 @@ import { isOpen } from "../Reduxtore/IsOpen";
 function NavBarMobile() {
     const open = useSelector(state => state.isopen.isOpen);
     const dispatch = useDispatch();
+
+    //fonction qui me permet de fermer manuellement le menu
     function close(){
         if (open === true){
             dispatch(isOpen(false))

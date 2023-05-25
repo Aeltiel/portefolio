@@ -1,0 +1,20 @@
+.insideParchemin{
+    width: 40vw;
+    height: 80vh;
+    background-color: $couverture;
+    border: solid darken($couverture, 10%) 3px;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+    animation: bookOpen 1s ease-in-out backwards;
+    z-index: 100;
+}
+.paper__closeBtn{
+    position: absolute;
+    left: 94%;
+    top: 1%;
+    background-color: transparent;
+    border: none;
+    z-index: 20;
+    cursor: pointer;
+}

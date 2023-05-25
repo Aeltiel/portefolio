@@ -8,7 +8,8 @@ export const IsOpenSlice = createSlice({
         DeuxOpen : false,
         TroisOpen : false,
         QuatreOpen : false,
-        dragonsKey : null //entregistre la clé du livre
+        dragonsKey : null, //entregistre la clé du livre
+        questOpen : false  //pour le parchemin
     },
     reducers : {
         isOpen : (state, action) =>{
@@ -29,8 +30,11 @@ export const IsOpenSlice = createSlice({
         setDragonsKey : (state, action) => {
             state.dragonsKey = action.payload; //met à jour la clé du livre
         },
+        questOpen : (state, action) =>{
+            state.questOpen = action.payload; //pour ouvrir et ferme le parchemin
+        }
     }
 })
 
-export const {isOpen, UnOpen, DeuxOpen, TroisOpen, QuatreOpen, setDragonsKey} = IsOpenSlice.actions;
+export const {isOpen, UnOpen, DeuxOpen, TroisOpen, QuatreOpen, setDragonsKey, questOpen} = IsOpenSlice.actions;
 export default IsOpenSlice.reducer;

@@ -15,6 +15,7 @@ import Dbutton1 from '../Component/DkeyButton/Dbutton1';
 import Dbutton2 from '../Component/DkeyButton/Dbutton2';
 import Dbutton3 from '../Component/DkeyButton/Dbutton3';
 import Dbutton4 from '../Component/DkeyButton/Dbutton4';
+import ParcheminButton from '../Component/ParcheminButton';
 import Portail from '../Pages component/Portail';
 import { setInfos } from "../Reduxtore/InfoRedux";
 import { useDispatch, useSelector } from 'react-redux';
@@ -112,6 +113,7 @@ function Bibliothèque() {
                   </div>
                   <Rules/>
                   <Portail/>
+                  <ParcheminButton/>
                   <Link to='/Home'>
                      <div className='library__teleport'>
                         <Star />

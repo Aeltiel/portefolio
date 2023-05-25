@@ -43,6 +43,23 @@ function About() {
                         <Reseaux/>
                     </div>
 
+                    <div className="about__activities">
+                        <h3 className="about__activities__title">Mes projets et activités du moment</h3>
+                        <p className="about__activities--text"><span>Formation POEC développeur front-end, du 1er juin au 4 septembre</span> <br />
+                        D'une durée de 3 mois, cette formation en distanciel me permettra de validé le Scrum Master PSM1.
+                        Via différentes parties, je verrais diverses méthodes techniques et normes, ainsi que de la gestion de projet
+                        mais aussi du dev front (Html/css, node js, bootstrap, JS, jquery/Angular ainsi qu'un peu de dev pour appli mobile)
+                        </p>
+
+                        <p className="about__activities--text">
+                        <span>Projet personnel sous Angular de To Do List à ma sauce</span> <br/>
+                        Le but ici est de prendre en main Angular, j'ai entamé le projet de faire une To Do List qui comprendrait un formulaire pour
+                        la faire, et que cette dernière s'affiche en condensé sur la page d'accueil afin qu'on puisse en cliquant dessus accéder à notre
+                         liste plus complète. Un des objectifs est également d'avoir plusieurs Liste sur la page d'accueil et de cliquer sur celle choisie.
+                         J'ajoute aussi la possibilité de modifier/ supprimer cette dernière à volonté <br/> En pause
+                        </p>
+                    </div>
+
                     <div className="about__diplome">
                         <Presentation
                             title={data[2].title}

@@ -1,0 +1,33 @@
+.paper{
+    &__container{
+        width: 39vw;
+        height: 78vh;
+        background-color: $page;
+        margin: auto;
+        margin-top: 1%;
+    }
+    &__title{
+        text-align: center;
+        padding-top: 2%;
+        font-size: 1.5em;
+    }
+    &__list{
+        list-style-type: none;
+        padding-top: 5%;
+        &__quest{
+            padding-bottom: 5%;
+            &--text{
+                font-size: 0.8em;
+            }
+        }
+    }
+
+}
+
+.fa-scroll{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.fa-square{
+    padding-right: 1%;
+}

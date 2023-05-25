@@ -10,12 +10,12 @@ function Page({ img, text, title }) {
                 <p className="page__content--text">{text}</p>
                 <Reseaux />
                 <div className="page__content--mail">
-                    <p>Et si vous souhaitez entrer directement en contact avec moi n'hésitez pas à mécrire un <span><a href="mailto:ingrid.stemer@live.fr">mail</a></span></p>
+                    <p>Et si vous souhaitez entrer directement en contact avec moi n'hésitez pas à m'écrire un <span><a href="mailto:ingrid.stemer@live.fr">mail</a></span></p>
                 </div>
             </div>
             <div className="page__CV">
                 <div className="page__CV--profil">
-                    <p>Vous souhaitez connaitre mon portentiel pour travailler dans votre entreprise ? Je vous propose de jeter un oeil sur mon profil AssessFirst</p>
+                    <p>Vous souhaitez connaitre mon potentiel pour travailler dans votre entreprise ? Je vous propose de jeter un oeil sur mon profil AssessFirst</p>
                     <a href="/DataPdf/AssestFirst_profil.pdf" download><Button name={"Mon profil AssessFirst"} /></a>
                 </div>
                 <div className="page__CV--text">

@@ -1,0 +1,20 @@
+.parcheminButton{
+    width: 10%;
+    height: 18%;
+    position: absolute;
+    top: 81%;
+    left: 47%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.openQuest{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 20;
+}
