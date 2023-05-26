@@ -12,7 +12,7 @@ function NavBarMobile() {
             dispatch(isOpen(false))
         }
     }
-    
+  
     return (
         <header className="mobileHead">
                 <button className="navBtn" onClick={() => {dispatch(isOpen(true)); close() }}><i className="fa-solid fa-bars"></i></button>
