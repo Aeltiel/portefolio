@@ -20,9 +20,9 @@ function NavBarMobile() {
                 {open ?
                 <nav className="navBar">
                     <ul className="navList">
-                    <li className="navLink"><Link to='/Home'>Accueil</Link></li>
-                    <li className="navLink"><Link to='/Projects'>Projets</Link></li>
-                    <li className="navLink"><Link to='/About'>À Propos</Link></li>
+                    <li className="navLink"><Link to='/Home' onClick={()=> {close()}}>Accueil</Link></li>
+                    <li className="navLink"><Link to='/Projects' onClick={()=> {close()}}>Projets</Link></li>
+                    <li className="navLink"><Link to='/About' onClick={()=> {close()}}>À Propos</Link></li>
                 </ul>  
                 </nav>: <div></div>
                 }   
