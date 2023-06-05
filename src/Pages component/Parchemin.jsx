@@ -21,12 +21,9 @@ function Parchemin() {
                 </li>
                 <li className="paper__list__quest">
                     <i className="fa-regular fa-square"></i>
-                    Projet personnel sous Angular de To Do List à ma sauce ^^
+                    Cours WordPress
                     <p className="paper__list__quest--text">
-                        Le but ici est de prendre en main Angular, j'ai entamé le projet de faire une To Do List qui comprendrait un formulaire pour
-                        la faire, et que cette dernière s'affiche en condensé sur la page d'accueil afin qu'on puisse en cliquant dessus accéder à notre
-                         liste plus complète. Un des objectifs est également d'avoir plusieurs Liste sur la page d'accueil et de cliquer sur celle choisie.
-                         J'ajoute aussi la possibilité de modifier/ supprimer cette dernière à volonté <br/> En pause
+                        En parallèle de mon POEC, je prend des cours sur WordPress pour m'informer sur ce CMS et faire quelques projets dessus
                     </p>
                 </li>
             </ul>
