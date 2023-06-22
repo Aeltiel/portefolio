@@ -36,6 +36,7 @@ function Projects() {
                     <div className="project__icons">
                         <i className="fa-brands fa-html5"></i>
                         <i className="fa-brands fa-css3-alt"></i>
+                        <i className="fa-brands fa-sass"></i>
                         <i className="fa-brands fa-js"></i>
                         <i className="fa-brands fa-react"></i>
                         <img className="project__icons--img" src={ReduxIcon} alt='Icon redux' />
