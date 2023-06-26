@@ -3,7 +3,9 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
 import { Routes, Route } from 'react-router-dom';
+import {inject} from '@vercel/analytics';
 
+inject();
 function App() {
   return (
     <><div className="App">
