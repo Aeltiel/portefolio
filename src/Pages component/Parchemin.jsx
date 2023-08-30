@@ -27,8 +27,7 @@ function Parchemin() {
           <i className="fa-regular fa-square"></i>
           Cours React + Redux sur Udemy
           <p className="paper__list__quest--text">
-            En parallèle de mon POEC, je prend des cours sur WordPress pour
-            m'informer sur ce CMS et faire quelques projets dessus
+            Pour parfaire ma compréhension et ma pratique de React et Redux
           </p>
         </li>
       </ul>
