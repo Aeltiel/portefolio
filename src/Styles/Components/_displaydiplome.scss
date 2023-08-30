@@ -1,0 +1,12 @@
+.diplomeC{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    &__img{
+        width : 100px;
+    }
+    &__infos{
+        text-align: right;
+    }
+}

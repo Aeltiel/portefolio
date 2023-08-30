@@ -4,6 +4,7 @@
         font-size: 3em;
         justify-content: center;
         gap: 50px;
+        align-items: center;
         @include Mobile{
             font-size: 40px;
             height: 40px;
@@ -20,7 +21,13 @@
                 width: 40px;
                 height: 40px;
             }
+            &--2{
+                width: 80px;
+                height: 80px;
+                object-fit: contain; 
+            }
         }
+        
     }
 
     &__slider {
@@ -91,5 +98,13 @@
 }
 .fa-sass{
     color: #cc6699;
+    animation: shake 0.2s linear infinite alternate-reverse;
+}
+.fa-angular{
+    color : #dd1b16;
+    animation: shake 0.2s linear infinite alternate-reverse;
+}
+.fa-node-js{
+    color : #3c873a;
     animation: shake 0.2s linear infinite alternate-reverse;
 }

@@ -3,7 +3,7 @@
        "id" : "001",
        "title" : "Présentation",
        "image" : "/Assets/moi.webp",
-       "description" : "Je suis Ingrid Stemer, titulaire d'un diplôme de niveau Bac+2, effectué chez Openclassrooms, je souhaite améliorer mes connaissances et compétences dans le domaine du développement en réalisantune formation de niveau Bac+3/4 chez Human Booster. La formation 'Concepteur Développeur d'Application' que j'ai choisi s'effectue en alternance, et je suis actuellement en recherche d'une entreprise pour m'accueillir sur Clermont-Ferrand ! N'hésitez pas à me contacter !",
+       "description" : "Je suis Ingrid Stemer, titulaire d'un titre professionnel Bac+2, effectué chez Openclassrooms, je souhaite améliorer mes connaissances et compétences dans le domaine du développement en intégrant une formation de niveau Bac+3/4 chez Human Booster. La formation 'Concepteur Développeur d'Application' que j'ai choisi s'effectue en alternance, et je suis actuellement en recherche d'une entreprise pour m'accueillir sur Clermont-Ferrand ! N'hésitez pas à me contacter !",
        "dragonsKey" : "1"
     },
     {
@@ -58,15 +58,51 @@
                 "image" : "/Assets/Corbeau-sur-crâne-01.webp",
                 "description" : "Et oui mon portefolio est un projet en lui même ! Pour toujours m'améliorer, j'ai réutilisé tout ce que j'ai appris lors de ma formation. En effet, je l'ai créé sous React.js avec une touche de Redux pour découvrir comme cela fonctionne. De même, j'ai appris comment faire de la 3D mais aussi améliorer mon niveau en animation fait via CSS. J'ai également pû créer un mini-jeux pour rendre ce portefolio plus immersif et amusant. Tout cela pour stimuler mon imagination et ma créativité. Mais aussi apprendre de nouvelle chose, progresser, me dépasser pour m'améliorer",
                 "Langages" : "React.js, Redux, Sass"
+            },
+            {
+                "id":"8",
+                "title": "JVThèque",
+                "image" : "/Assets/JVTheque.webp",
+                "description" : "Le projet JVThèque est actuellement en cours de développement. Il opte pour un design en mobile first et propose à l'utilisateur de créer un compte afin d'entregistrer sa liste de Jeux Vidéo pour la consulter, la tier et la modifier à tout instant. L'application front end est développé avec React, puis j'ai créer une API Rest lié à une base de données Mongo. Ce projet me permet d'utiliser tout ce que j'ai appris lors de ma formation et pousser plus loin en faisant vraiment un site de A à Z ! ",
+                "Langages" : "React.js, Sass, Node.js, Express, MongoDB"
+            },
+            {
+                "id":"9",
+                "title": "App Météo React Native",
+                "image" : "/Assets/AppMeteo_React_Native.webp",
+                "description" : "Application météo faisant appel à diverses Api pour prendre en main React Native. Dans ce projet, j'ai pu voir la structure d'une app React Native, le système de navigation, les spécificités du langage et son hébergement sur Expo. ",
+                "Langages" : "React Native, Expo"
+            },
+            {
+                "id":"10",
+                "title": "Le Sauveteur",
+                "image" : "/Assets/Sauveteur_maquette.webp",
+                "description" : "Le Sauveteur est le projet de la fin de la formation POEC Front end dispensé par Human Booster. Dans un équipe de 4 personnes (moi incluse), j'ai travaillé à l'élaboration de l'Api et de la partie React Native de ce projet. Cette application qui permet à son utilisateur de se connecter et de déclarer une urgence a été découpé en 3 grandes parties : l'application React native, destiner aux utilisateur finaux, une application web faite sous Angular pour la partie administration, et l'Api Rest couplé à une base de donnée MongoDB pour le backend. Avec la méthodologie de travail SCRUM l'équipe a pu se partager le travail. Alexis Correia Henriques s'est occupé du maquettage de l'application. Emmanuelle Floret et moi avons fait l'API, Alex Chaussaroux s'est occupé de l'appli web Angular, et je me suis occupé de la partie React Native. Lors du travail sur ce projet, nous nous sommes rendu compte qu'il manquait des éléments importants par rapport au sujet fournit comme une bonne maquette, ou des fonctionnalités diverses, comme l'ajout d'une map afin que la personne sache où elle se trouve. Après validation de nos ajouts, nous avons pu nous mettre au travail.",
+                "Langages" : "React Native, Expo, Angular, Node.js, Express, MongoDB"
             }
         ],
         "dragonsKey" : "2"
     },
     {
         "id" : "003",
-        "title" : "Diplôme",
-        "description" : "Juin 2022-Janvier 2023 : Développeur web chez Openclassrooms (bac +2)",
-        "image": "/Assets/LogoOC.webp",
+        "title" : "Diplômes",
+        "formations" : [
+            {
+                "id" : "1",
+                "title" : "Développeur Web (bac+2)",
+                "ecole" : "Openclassrooms",
+                "image" : "/Assets/LogoOC.webp",
+                "date" : "Juin 2022 - Janvier 2023"
+            },
+            {
+                "id" : "2",
+                "title" : "POEC Front-end",
+                "ecole" : "Human Booster",
+                "image" : "/Assets/Logo-HB.webp",
+                "date" : "Juin 2023 - Août 2023"
+            }
+        ],
+         
         "dragonsKey" : "3" 
     },
     {
