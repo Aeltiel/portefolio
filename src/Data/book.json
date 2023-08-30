@@ -62,7 +62,7 @@
             {
                 "id":"8",
                 "title": "JVThèque",
-                "image" : "/Assets/JVTheque.webp",
+                "image" : "Assets/JVTheque.webp",
                 "description" : "Le projet JVThèque est actuellement en cours de développement. Il opte pour un design en mobile first et propose à l'utilisateur de créer un compte afin d'entregistrer sa liste de Jeux Vidéo pour la consulter, la tier et la modifier à tout instant. L'application front end est développé avec React, puis j'ai créer une API Rest lié à une base de données Mongo. Ce projet me permet d'utiliser tout ce que j'ai appris lors de ma formation et pousser plus loin en faisant vraiment un site de A à Z ! ",
                 "Langages" : "React.js, Sass, Node.js, Express, MongoDB"
             },
@@ -98,7 +98,7 @@
                 "id" : "2",
                 "title" : "POEC Front-end",
                 "ecole" : "Human Booster",
-                "image" : "/Assets/Logo-HB.webp",
+                "image" : "/Assets/LogoHB.webp",
                 "date" : "Juin 2023 - Août 2023"
             }
         ],
