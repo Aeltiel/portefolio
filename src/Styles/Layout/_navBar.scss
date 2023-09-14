@@ -12,6 +12,9 @@ nav{
     justify-content: center;
     gap : 50px;
     font-size: 2em;
+    @include Tablette{
+        font-size: 1.7em;
+    }
 
 }
 nav a{

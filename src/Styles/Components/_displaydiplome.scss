@@ -5,9 +5,16 @@
     margin-bottom: 20px;
     &__img{
         width : 100px;
+        @include Mobile{
+            width: 70px;
+        }
     }
     &__infos{
         width: 15%;
         text-align: right;
+        @include Mobile{
+            width: 50%;
+            font-size: 16px;
+        }
     }
 }

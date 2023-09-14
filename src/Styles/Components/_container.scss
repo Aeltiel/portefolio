@@ -11,7 +11,7 @@
 
         @include Tablette {
             flex-wrap: wrap;
-            height: 800px;
+            height: 1100px;
         }
 
         @include Mobile {
@@ -103,8 +103,9 @@
     }
 
     @include Tablette {
-        height: 700px;
+        height: 1100px;
         flex-wrap: wrap;
+
     }
 
     @include Mobile {

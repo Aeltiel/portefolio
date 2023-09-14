@@ -1,5 +1,4 @@
 function Page({ data }) {
-  //console.log(data);
   return (
     <div className="page__box1">
       <h3 className="page__content1--title1">{data.title}</h3>

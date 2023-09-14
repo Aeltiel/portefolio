@@ -9,6 +9,7 @@
     @include Mobile{
         gap: 20px;
         width: 90%;
+        flex-direction: column;
     }
     
     &__title {
@@ -22,8 +23,8 @@
             font-size: 18px;
         }
         @include Mobile{
-            margin-right: 3%;
             font-size: 1em;
+            width: 100%;
         }
     }
 
@@ -47,6 +48,7 @@
         @include Mobile{
             width: 150px;
             height: 150px;
+            margin: auto;
         }
     }
 }

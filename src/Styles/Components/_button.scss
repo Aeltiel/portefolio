@@ -1,5 +1,5 @@
 .btn {
-    width: 400px;
+    width: 300px;
     height: 60px;
     background-color: $primarycolor;
     color: white;
@@ -8,9 +8,11 @@
     position: relative;
     overflow : hidden;
     z-index: 0;
+    margin: 5px;
     @include TabletteLand{
-        width: 300px;
-        height: 55px;
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
     }
     @include Tablette{
         width: 300px;
