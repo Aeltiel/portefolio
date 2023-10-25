@@ -50,7 +50,6 @@ function Projects() {
               src={ReactNative}
               alt="Icon react native"
             />
-            <i className="fa-brands fa-angular"></i>
             <i className="fa-brands fa-node-js"></i>
           </div>
           <Presentation title={data.title} description={data.description} />

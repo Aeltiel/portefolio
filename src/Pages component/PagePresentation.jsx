@@ -14,7 +14,7 @@ function Page({ img, text, title }) {
             Et si vous souhaitez entrer directement en contact avec moi
             n'hésitez pas à m'écrire un{" "}
             <span>
-              <a href="mailto:ingrid.stemer@live.fr">mail</a>
+              <a href="mailto:stemer.ingrid36@gmail.com">mail</a>
             </span>
           </p>
         </div>

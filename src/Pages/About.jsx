@@ -7,6 +7,7 @@ import Reseaux from "../Component/Reseaux";
 import Container from "../Component/Container";
 import Button from "../Component/Button";
 import Book from "../Data/book.json";
+import Quest from "../Data/quest.json";
 import moi from "../Assets/moi.webp";
 import DiplomesDisplay from "../Component/DiplomesDisplay";
 import { setInfos } from "../Reduxtore/InfoRedux";
@@ -17,6 +18,8 @@ function About() {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.info.infos);
   const [loading, setLoading] = useState(true);
+  const dataQuest = Quest;
+  console.log(dataQuest);
 
   useEffect(() => {
     let info = Book;
@@ -46,25 +49,14 @@ function About() {
             <h3 className="about__activities__title">
               Mes projets et activités du moment
             </h3>
-            <p className="about__activities--text">
-              <span>Projet JVThèque</span> <br />
-              Site internet réalisé de A à Z. La partie Backend est une API Rest
-              réalisé en node.js à l'aide d'express. L'API est liée à une base
-              de donnée MongoDB. La partie Frontend est réalisé avec React. Le
-              site permettra de créer un compte afin de créer sa propre liste de
-              Jeux Vidéos, pour ceux qui souhaite avoir un outil accessible
-              partout. Ajoutez les jeux que vous avez, ou que vous souhaitez
-              avoir en fonction de leur plateforme. Puis triez les selon vos
-              envies. L'appli est designé en mobile first afin de faciliter
-              l'intéraction mobile, pour vous aider lors de vos sessions
-              shopping JV. L'appli est également disponible sur desktop pour
-              votre shopping en ligne !
-            </p>
-
-            <p className="about__activities--text">
-              <span>Cours React + Redux sur Udemy</span> <br />
-              Pour parfaire ma compréhension et ma pratique de React et Redux
-            </p>
+            {dataQuest.map((activity) => {
+              return (
+                <p className="about__activities--text" key={activity.id}>
+                  <span>{activity.title}</span> <br />
+                  {activity.activity}
+                </p>
+              );
+            })}
           </div>
 
           <div className="about__diplome">
