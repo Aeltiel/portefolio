@@ -105,20 +105,13 @@ function About() {
             <div className="about__CV--text">
               <p>
                 À présent que vous me connaissez un peu mieux, n'hésitez pas à
-                repartir avec un petit souvenir en cliquant sur le bouton de
-                votre choix!
+                repartir avec un petit souvenir !
               </p>
-              <a
-                href="/DataPdf/CV_Ingrid_STEMER_CDA_Alternant1.pdf"
-                download="CV-CDA-Alternance-IS.pdf"
-              >
-                <Button name={"Mon CV Alternance"} />
-              </a>
               <a
                 href="/DataPdf/CV_Ingrid_STEMER_Dev_Web.pdf"
                 download="CV-Dev-Web-IS.pdf"
               >
-                <Button name={"Mon CV Dev Web"} />
+                <Button name={"Mon CV"} />
               </a>
             </div>
             <div className="about__CV--mail">
