@@ -73,7 +73,7 @@
 @keyframes apparition {
     from {
         opacity: 0;
-        transform: translateY(100%);
+        top: 100%;
     }
 
     25% {
@@ -91,7 +91,7 @@
 
     to {
         opacity: 0;
-        transform: translateY(0%);
+        top: 0%;
     }
 }
 

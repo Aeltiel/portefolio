@@ -11,6 +11,11 @@
         }
 }
 
+@mixin starPosition{
+    position: absolute;
+    top: 0%;
+}
+
 //mediaqueries
 @mixin Mobile{
     @media screen and (min-width : 320px) and (max-width : 475px){

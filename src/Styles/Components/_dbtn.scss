@@ -22,16 +22,16 @@
 .b1{
     transform: skewY(38deg) skewX(335deg);
     left: 5%;
-    bottom: 42%;
+    bottom: 43%;
 }
 .b2{
     left: 10.5%;
-    bottom: 69%;
+    bottom: 70%;
     transform: rotate(-20deg);
 }
 .b3{
     left: 63%;
-    bottom: 35.5%;
+    bottom: 36.7%;
     transform: rotate(90deg);
     @include TabletteLand{
         bottom: 35%;
