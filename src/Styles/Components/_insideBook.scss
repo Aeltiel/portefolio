@@ -1,4 +1,5 @@
-.inside__Container{
+.inside{
+    &__Container{
     width: 80vw;
     height: 70vh;
     background-color: $couverture;
@@ -8,6 +9,11 @@
     position: relative;
     animation: bookOpen 1s ease-in-out backwards;
     z-index: 100;
+    }
+    &__page{
+        display: flex;
+        margin-left: 1%;
+    }
 }
 
 .closeBtn{

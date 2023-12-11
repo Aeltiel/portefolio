@@ -2,26 +2,28 @@
     &__box {
         display: flex;
         flex-wrap: wrap;
-        width: 78vw;
+        width: 48%;
         height: 68vh;
         background-color: $page;
-        margin: auto;
         margin-top: 0.5%;
+        border-right: 2px solid darken($page, 20%);
+        border-top-right-radius: 15px;
     }
     &__box1{
-        width: 78vw;
+        width: 49%;
         height: 68vh;
         background-color: $page;
-        margin: auto;
+        padding-left: 10px;
+        padding-right: 15px;
         margin-top: 0.5%;
+        border-left: 2px solid darken($page, 20%);
+        border-top-left-radius: 15px;
     }
 
     &__img {
-        width: 25vw;
-        height: 40vh;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 30px;
+        width: 70%;
+        height: 80%;
+        margin: auto;
         border: 3px solid $primarycolor;
         border-radius: 100px;
         object-fit: cover ;
@@ -48,7 +50,6 @@
     &__content {
         width: 39vw;
         height: 40vh;
-        margin-right: 40px;
         margin-top: 30px;
         line-height: 125%;
         @include TabletteLand{
@@ -98,8 +99,6 @@
     }
     &__CV{
         display: flex;
-        margin-left: 40px;
-        margin-right: 40px;
         gap : 20px;
         @include TabletteLand{
             font-size: 14px; 
@@ -117,11 +116,20 @@
                     margin-bottom: 5px;
                 }
             }
+            @include Desktop{
+                width: 50%;
+            }
         }
         &--text{
             text-align: center;
             & p{
                 margin-bottom: 20px;
+                @include Desktop{
+                    margin-bottom: 43px;
+                }
+            }
+            @include Desktop{
+                width: 50%;
             }
         }
         &--textBtn{

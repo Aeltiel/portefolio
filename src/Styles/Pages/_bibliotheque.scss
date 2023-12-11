@@ -7,6 +7,9 @@
     background-repeat: no-repeat;
     font-family: 'Shantell Sans', Verdana, sans-serif;
     font-weight: bold;
+    @include Desktop{
+        font-size: 0.9em;
+    }
 }
 
 .library {

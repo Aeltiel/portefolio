@@ -9,6 +9,9 @@
     overflow : hidden;
     z-index: 0;
     margin: 5px;
+    @include Desktop{
+        width: 250px;
+    }
     @include TabletteLand{
         width: 200px;
         height: 50px;
