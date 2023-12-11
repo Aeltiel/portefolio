@@ -1,7 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import Booki from "../Assets/Booki-screen.webp";
-import OhMyFood from "../Assets/OhMyFood-screen.webp";
-import LaPanthere from "../Assets/LaPanthere-screen.webp";
 import Kanap from "../Assets/Kanap-screen.webp";
 import Piiquante from "../Assets/Piiquante-screen.webp";
 import Kasa from "../Assets/Kasa-screen.webp";
@@ -16,30 +13,7 @@ export const CarousselSlice = createSlice({
     carrouselIndex: 0,
     carrouselData: [
       {
-        id: "1",
-        title: "Booki",
-        image: Booki,
-        description:
-          "Dans ce premier projet, l'objectif était de réaliser une page web en HTML et CSS à partir d'une maquette qui m'a été fournis. Le repect de cette dernière était primordiale pour la réussite du projet. J'ai dû découper la maquette pour pouvoir la réaliser en HTML et utiliser Flexbox pour faire la mise en forme. Des effets au survol ont été ajouté sur certain élément. L'utilisation de Fontawsome et de GoogleFont étaient également demandé",
-        Langages: "HTML5, CSS3",
-      },
-      {
-        id: "2",
-        title: "Oh My Food",
-        image: OhMyFood,
-        description:
-          "Oh My Food est le second projet réaliser lors de ma formation, ici le but était de créer un site pour commander dans divers restaurant. Plusieurs pages étaient nécessaires et cela à également permis d'utiliser le préprocesseur Sass ainsi que de faire des animations CSS. Cela a permis d'améliorer mon niveau de compréhension et d'usage du CSS",
-        Langages: "HTML5, CSS3, Sass",
-      },
-      {
-        id: "3",
-        title: "La Panthère",
-        image: LaPanthere,
-        description:
-          "Le but de ce projet est de se former aux principes du SEO et d'optimisation du site. Ainsi je devais auditer le site afin de connaitre ces performances et examiner le code pour l'optimiser et retirer tout ce qui est reconnu comme des techniques de Black Hat (comme mettre en tout petit et de la même couleur que le fond des mots-clés par exemple), assurer l'accessibilité du site en faisant en sorte qu'il n'y a pas de texte important dans les images, en veillant à ce que le texte soit de la bonne taille, et que les contrastes soient suffisants. Pour finir un petit peu d'optimisation, notamment sur les images pour qu'elles aient le format approprié pour un site internet",
-      },
-      {
-        id: "4",
+        id: "8",
         title: "Kanap",
         image: Kanap,
         description:
@@ -47,7 +21,7 @@ export const CarousselSlice = createSlice({
         Langages: "JavaScript",
       },
       {
-        id: "5",
+        id: "7",
         title: "Piiquante",
         image: Piiquante,
         description:
@@ -63,7 +37,7 @@ export const CarousselSlice = createSlice({
         Langages: "React.js, Sass",
       },
       {
-        id: "7",
+        id: "5",
         title: "Portefolio",
         image: Corbeau,
         description:
@@ -71,7 +45,7 @@ export const CarousselSlice = createSlice({
         Langages: "React.js, Redux, Sass",
       },
       {
-        id: "8",
+        id: "4",
         title: "JVThèque",
         image: JVTheque,
         description:
@@ -79,7 +53,7 @@ export const CarousselSlice = createSlice({
         Langages: "React.js, Sass, Node.js, Express, MongoDB",
       },
       {
-        id: "9",
+        id: "3",
         title: "App Méto React Native",
         image: AppMeteo,
         description:
@@ -87,12 +61,20 @@ export const CarousselSlice = createSlice({
         Langages: "React Native, Expo",
       },
       {
-        id: "10",
+        id: "2",
         title: "Le Sauveteur",
         image: Sauveteur,
         description:
           "Le Sauveteur est le projet de la fin de la formation POEC Front end dispensé par Human Booster. Dans un équipe de 4 personnes (moi incluse), j'ai travaillé à l'élaboration de l'Api et de la partie React Native de ce projet. Cette application qui permet à son utilisateur de se connecter et de déclarer une urgence a été découpé en 3 grandes parties : l'application React native, destiner aux utilisateur finaux, une application web faite sous Angular pour la partie administration, et l'Api Rest couplé à une base de donnée MongoDB pour le backend. Avec la méthodologie de travail SCRUM l'équipe a pu se partager le travail. Alexis Correia Henriques s'est occupé du maquettage de l'application. Emmanuelle Floret et moi avons fait l'API, Alex Chaussaroux s'est occupé de l'appli web Angular, et je me suis occupé de la partie React Native. Lors du travail sur ce projet, nous nous sommes rendu compte qu'il manquait des éléments importants par rapport au sujet fournit comme une bonne maquette, ou des fonctionnalités diverses, comme l'ajout d'une map afin que la personne sache où elle se trouve. Après validation de nos ajouts, nous avons pu nous mettre au travail.",
         Langages: "React Native, Expo, Angular, Node.js, Express, MongoDB",
+      },
+      {
+        id: "1",
+        title: "Api de blog ",
+        image: "",
+        description:
+          "Projet collaboratif du groupe Inkkube. Ayant intégré ce groupe de travail, je participe à l'élaboration du Api de blog dans l'envirionnement Node.js. Je suis actuellement en traind e faire la partie 'Section' de l'API. In fine, l'api sera relié à une base de données MongoDB.",
+        Langages: "Typescript, Node.js",
       },
     ],
   },
