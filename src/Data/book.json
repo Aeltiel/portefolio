@@ -89,7 +89,38 @@
                 "date" : "Juin 2023 - Août 2023"
             }
         ],
-         
+        "cours" : [
+            {   
+                "id" : "1",
+                "title" : "React JS + Redux",
+                "formateur" : "Robin Lebhar",
+                "plateforme" : "Udemy"
+            },
+            {   
+                "id" : "2",
+                "title" : "React Native",
+                "formateur" : "Robin Lebhar",
+                "plateforme" : "Udemy"
+            },
+            {   
+                "id" : "3",
+                "title" : "Tailwind de A à Z",
+                "formateur" : "Enzo Ustariz",
+                "plateforme" : "Udemy"
+            },
+            {   
+                "id" : "4",
+                "title" : "Développement PHP et MySQL",
+                "formateur" : "Dr Firas",
+                "plateforme" : "Udemy"
+            },
+            {   
+                "id" : "5",
+                "title" : "Node.js : le guide ultime",
+                "formateur" : "Antho Welc",
+                "plateforme" : "Udemy"
+            }
+        ], 
         "dragonsKey" : "3" 
     },
     {

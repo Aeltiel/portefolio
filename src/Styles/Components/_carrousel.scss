@@ -35,6 +35,16 @@
             &--langage {
                 text-align: center;
                 margin-top: 10px;
+                display: flex;
+                font-size: 3em;
+                justify-content: center;
+                gap: 50px;
+                align-items: center;
+                &--img{
+                    width: 80px;
+                height: 80px;
+                object-fit: contain;
+                }
             }
         }
 
@@ -87,4 +97,8 @@
 .fa-caret-down {
     transform: rotate(-90deg);
     font-size: 1.2em;
+}
+
+.transition{
+    animation: hide 1s ease-in-out reverse;
 }

@@ -2,6 +2,7 @@
     &__box {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         width: 48%;
         height: 68vh;
         background-color: $page;
@@ -97,6 +98,17 @@
             }
         }
     }
+
+    &__content2{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        &--title{
+            text-decoration: underline;
+            text-decoration-color: $primarycolor;
+        }
+    }
+
     &__CV{
         display: flex;
         gap : 20px;
