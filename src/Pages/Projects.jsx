@@ -32,27 +32,10 @@ function Projects() {
       <>
         <NavBar />
         <NavBarMobile />
-        <main className="projectConatainer" key={data.id}>
+        <main className="projectConatainer">
           <Title title={"Bienvenue dans ma galerie de projets !"} />
-          <div className="project__icons">
-            <i className="fa-brands fa-html5"></i>
-            <i className="fa-brands fa-css3-alt"></i>
-            <i className="fa-brands fa-sass"></i>
-            <i className="fa-brands fa-js"></i>
-            <i className="fa-brands fa-react"></i>
-            <img
-              className="project__icons--img"
-              src={ReduxIcon}
-              alt="Icon redux"
-            />
-            <img
-              className="project__icons--img--2"
-              src={ReactNative}
-              alt="Icon react native"
-            />
-            <i className="fa-brands fa-node-js"></i>
-          </div>
-          <Presentation title={data.title} description={data.description} />
+
+          <Presentation description={data.description} />
           <div className="project__slider">
             <Slider />
           </div>
@@ -67,15 +50,6 @@ function Projects() {
                 language={element.Langages}
               />
             ))}
-          </div>
-          <div className="project__cta">
-            <p>
-              Bien ! À présent que vous avez une idée de ce que je sais faire,
-              je vous propose d'en savoir un peu plus sur moi !
-            </p>
-            <Link to="/About">
-              <Button name={"Découvrir"} />
-            </Link>
           </div>
         </main>
         <Footer />

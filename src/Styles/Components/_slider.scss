@@ -1,25 +1,39 @@
-.slider-container{
-    max-width: 600px;
+.slider-container {
+  max-width: 525px;
+  max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid $primarycolor;
+  overflow: hidden;
+  @include TabletteLand {
+    max-width: 400px;
     max-height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid $primarycolor;
-    overflow: hidden;
-    background-color: white;
-    @include TabletteLand{
-        max-width: 400px;
-        max-height: 300px;
+  }
+  @include Tablette {
+    max-width: 300px;
+    max-height: 150px;
+  }
+  & .slider {
+    position: relative;
+    & img {
+      max-width: 525px;
+      height: 300px;
+      object-fit: cover;
     }
-    @include Tablette{
-        max-width: 300px;
-        max-height: 150px;
+    & p {
+      position: absolute;
+      bottom: 7%;
+      left: 44%;
+      font-weight: bold;
+      background-color: $primarycolor;
+      padding: 5px;
+      border-radius: 5px;
+      color: white;
     }
-    & .slider{
-        display: flex;
-        animation: slider 20s infinite ease-in-out;
-        & img{
-            width: 100%;
-            height: 100%;
-        }
-    }
+  }
+}
+
+.sliders {
+  display: flex;
+  animation: slider 15s infinite ease-in-out;
 }

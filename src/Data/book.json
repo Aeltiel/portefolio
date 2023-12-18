@@ -63,7 +63,7 @@
             {
                 "id":"1",
                 "title": "Api de blog ",
-                "image" : "/Assets/Sauveteur_maquette.webp",
+                "image" : "/Assets/screen-code.webp",
                 "description" : "Projet collaboratif du groupe Inkkube. Ayant intégré ce groupe de travail, je participe à l'élaboration du Api de blog dans l'envirionnement Node.js. Je suis actuellement en traind e faire la partie 'Section' de l'API. In fine, l'api sera relié à une base de données MongoDB.",
                 "date" : "Nov 2023"
             }

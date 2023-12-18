@@ -1,136 +1,113 @@
 //from book animation
 @keyframes levitation {
-    from {
-        transform: translateY(50px);
-    }
+  from {
+    transform: translateY(50px);
+  }
 
-    to {
-        transform: translateY(100px);
-    }
+  to {
+    transform: translateY(100px);
+  }
 }
 
 //from title animation
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 //keyframe from the Slider component
 @keyframes slider {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
 
-    0%,
-    14% {
-        transform: translateX(0);
-    }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
 
-    20%,
-    31% {
-        transform: translateX(-100%);
-    }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
 
-    40%,
-    52% {
-        transform: translateX(-200%);
-    }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
 
-    57%,
-    66% {
-        transform: translateX(-300%);
-    }
-
-    75%,
-    80% {
-        transform: translateX(-400%);
-    }
-
-    85%,
-    95% {
-        transform: translateX(-500%);
-    }
-
-    100% {
-        transform: translateX(-600%);
-    }
-}
-
-//from language icons
-@keyframes shake {
-    from {
-        transform: skewX(2deg);
-    }
-
-    to {
-        transform: skewX(-2deg);
-    }
+  100% {
+    transform: translateX(-400%);
+  }
 }
 
 //from stars in button into library page
 @keyframes apparition {
-    from {
-        opacity: 0;
-        top: 100%;
-    }
+  from {
+    opacity: 0;
+    top: 100%;
+  }
 
-    25% {
-        opacity: 0.5;
-    }
+  25% {
+    opacity: 0.5;
+  }
 
-    50% {
-        opacity: 1;
+  50% {
+    opacity: 1;
+  }
 
-    }
+  75% {
+    opacity: 0.5;
+  }
 
-    75% {
-        opacity: 0.5
-    }
-
-    to {
-        opacity: 0;
-        top: 0%;
-    }
+  to {
+    opacity: 0;
+    top: 0%;
+  }
 }
 
 //from light's candle in library page
 @keyframes skale {
-    from {
-        transform: scale(0.8);
-        opacity: 0.4;
-    }
+  from {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
 
-    to {
-        transform: scale(1.2);
-        opacity: 1;
-    }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
 }
 
 //from open de the book in library page
 @keyframes bookOpen {
-    from {
-        transform: scale(0);
-        opacity: 0;
-    }
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
 
-    80% {
-        transform: scale(1.10);
-    }
+  80% {
+    transform: scale(1.1);
+  }
 
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 // animation for hide key
-@keyframes hide{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
