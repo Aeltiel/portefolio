@@ -10,8 +10,12 @@
     max-height: 300px;
   }
   @include Tablette {
+    max-width: 350px;
+    max-height: 200px;
+  }
+  @include Mobile {
     max-width: 300px;
-    max-height: 150px;
+    max-height: 200px;
   }
   & .slider {
     position: relative;
@@ -19,6 +23,18 @@
       max-width: 525px;
       height: 300px;
       object-fit: cover;
+      @include Tablette {
+        max-width: 350px;
+        max-height: 200px;
+      }
+      @include TabletteLand {
+        max-width: 400px;
+        max-height: 300px;
+      }
+      @include Mobile {
+        max-width: 300px;
+        max-height: 200px;
+      }
     }
     & p {
       position: absolute;
@@ -29,6 +45,15 @@
       padding: 5px;
       border-radius: 5px;
       color: white;
+      @include Tablette {
+        left: 41%;
+      }
+      @include TabletteLand {
+        left: 41%;
+      }
+      @include Mobile {
+        left: 40%;
+      }
     }
   }
 }
