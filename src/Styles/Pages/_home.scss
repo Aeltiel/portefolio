@@ -104,6 +104,32 @@
       }
     }
   }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.5em;
+    background-color: $secondarycolor;
+    color: white;
+    &--ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      gap: 50px;
+      & li a {
+        color: $thirdcolor;
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: white;
+        }
+      }
+    }
+  }
+
   &__project {
     width: 95%;
     display: flex;

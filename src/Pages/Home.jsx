@@ -46,6 +46,21 @@ function Home() {
               description={data[0].description}
             />
           </section>
+
+          <nav className="home__nav">
+            <p>Accédez à ce qui vous intéresse en un clin d'oeil : </p>
+            <ul className="home__nav--ul">
+              <li>
+                <a href="#project">Projets</a>
+              </li>
+              <li>
+                <a href="#diplome">Diplômes</a>
+              </li>
+              <li>
+                <a href="#loisirs">Loisirs</a>
+              </li>
+            </ul>
+          </nav>
           <Reseaux />
 
           <div className="home__info">
@@ -67,7 +82,7 @@ function Home() {
             />
           </div>
 
-          <section className="home__project">
+          <section className="home__project" id="project">
             <Slider />
             <div className="home__project__container">
               <h2 className="home__project--title presentation__title">
@@ -100,7 +115,7 @@ function Home() {
             </div>
           </section>
 
-          <section className="home__diplome">
+          <section className="home__diplome" id="diplome">
             <Presentation title={data[2].title} />
             {data[2].formations.map((element) => (
               <DiplomesDisplay
@@ -113,7 +128,7 @@ function Home() {
             ))}
           </section>
 
-          <section className="home__loisirs">
+          <section className="home__loisirs" id="loisirs">
             <Presentation
               title={data[3].title}
               description={data[3].description}
