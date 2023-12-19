@@ -11,8 +11,8 @@
     },
     {
         "id" : "3",
-        "title" : "Cours Python sur Udemy",
-        "activity" : "Maintenant que j'ai fini mon cours sur React + Redux, je souhaite m'approprier des langages backend, à savoir Python, afin de compléter mon arsenal et d'être enfin polyvalente."    
+        "title" : "Cours Node.js sur Udemy",
+        "activity" : "Pour être plus à l'aise avec la partie Backend que j'ai vu lors de ma formation et pour être en adéquation avec le projet d'Api sur lequel je travail, je suis un cours sur node.js pour approfondir mes connaissances et être plus à l'aise avec."    
     },
     {
         "id" : "4",

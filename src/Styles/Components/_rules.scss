@@ -1,81 +1,81 @@
-.rule{
-    &__Container{
-        @include Tablette{
-            display: none;
-        }
-        @include Mobile{
-            display: none;
-        }
-        z-index: 40;
-        width: 50%;
-        min-height: 45%;
-        position: relative;
-        background-color: $primarycolor;
-        color: white;
-        margin-top: 8%;
-        margin-left: 38%;
-        border: 4px solid $thirdcolor;
-        border-radius: 50px;
-        animation: bookOpen 1s ease-in-out backwards;
-        &::before{
-            content: "";
-            right : 100%;
-            bottom: 14%;
-            border : solid transparent;
-            width: 0;
-            height: 0;
-            position: absolute; 
-            border-right-color: $thirdcolor;
-            border-width: 35px;
-        }
-        &::after{
-            content: "";
-            right : 100%;
-            bottom: 15%;
-            border : solid transparent;
-            width: 0;
-            height: 0;
-            position: absolute; 
-            border-right-color: $primarycolor;
-            border-width: 30px;
-        }
+.rule {
+  &__Container {
+    @include Tablette {
+      display: none;
     }
-    &__text1{
-        text-align: justify;
-        line-height: 125%;
-        padding-top: 50px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 40px;
+    @include Mobile {
+      display: none;
     }
-    &__text2{
-        text-align: justify;
-        line-height: 120%;
-        padding-left: 30px;
-        padding-right: 30px;
+    z-index: 40;
+    width: 50%;
+    min-height: 45%;
+    position: relative;
+    background-color: $primarycolor;
+    color: white;
+    margin-top: 8%;
+    margin-left: 38%;
+    border: 4px solid $thirdcolor;
+    border-radius: 50px;
+    animation: bookOpen 1s ease-in-out backwards;
+    &::before {
+      content: "";
+      right: 100%;
+      bottom: 14%;
+      border: solid transparent;
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-right-color: $thirdcolor;
+      border-width: 35px;
     }
-    &__text3{
-        text-align: center;
-        padding-top: 20px;
+    &::after {
+      content: "";
+      right: 100%;
+      bottom: 15%;
+      border: solid transparent;
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-right-color: $primarycolor;
+      border-width: 30px;
     }
-    &__closeBtn{
-        position: absolute;
-        top: 4%;
-        left : 90%;
-        border: none;
-        background-color: transparent;
-        color: white;
-        cursor: pointer;
+  }
+  &__text1 {
+    text-align: justify;
+    line-height: 125%;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    & span {
+      text-decoration: underline;
     }
-   @include TabletteLand{
-        &__Container{
-            margin-top: 0;
-            height: 65%;
-            display: block;
-            font-size: 15px;
-        }
+  }
+  &__text2 {
+    text-align: justify;
+    line-height: 120%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &__text3 {
+    text-align: center;
+    padding-top: 20px;
+  }
+  &__closeBtn {
+    position: absolute;
+    top: 4%;
+    left: 90%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  @include TabletteLand {
+    &__Container {
+      margin-top: 0;
+      height: 65%;
+      display: block;
+      font-size: 15px;
     }
-}
-span{
-    text-decoration: underline;   
+  }
 }

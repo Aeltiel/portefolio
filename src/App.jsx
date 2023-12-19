@@ -1,6 +1,5 @@
 import Bibliothèque from "./Pages/Bibliothèque";
 import Home from "./Pages/Home";
-import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import { Routes, Route } from "react-router-dom";
 import { inject } from "@vercel/analytics";
@@ -33,7 +32,6 @@ function App() {
           )}
           <Route path="/Home" element={<Home />} />
           <Route path="/Bibliotheque" element={<Bibliothèque />} />
-          <Route path="/About" element={<About />} />
           <Route path="/Projects" element={<Projects />} />
         </Routes>
       </div>

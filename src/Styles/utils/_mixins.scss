@@ -1,42 +1,49 @@
-@mixin bougie{
-    width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        position: absolute;
-        background-color: lighten($bougie, 30%);
-        animation: skale 2s infinite ease-in-out alternate-reverse;
-        @include TabletteLand{
-            width : 30px;
-            height: 30px;
-        }
+@mixin bougie {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: lighten($bougie, 30%);
+  animation: skale 2s infinite ease-in-out alternate-reverse;
+  @include TabletteLand {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-@mixin starPosition{
-    position: absolute;
-    top: 0%;
+@mixin starPosition {
+  position: absolute;
+  top: 0%;
+}
+
+@mixin title {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: $secondarycolor;
+  color: $primarycolor;
 }
 
 //mediaqueries
-@mixin Mobile{
-    @media screen and (min-width : 320px) and (max-width : 475px){
-        @content
-    }
-};
+@mixin Mobile {
+  @media screen and (min-width: 320px) and (max-width: 475px) {
+    @content;
+  }
+}
 
-@mixin TabletteLand{
-    @media only screen and (min-width : 767px) and (max-width : 1200px) and (orientation : landscape){
-        @content
-    }
-};
+@mixin TabletteLand {
+  @media only screen and (min-width: 767px) and (max-width: 1200px) and (orientation: landscape) {
+    @content;
+  }
+}
 
-@mixin Tablette{
-    @media only screen and (min-width : 476px) and (max-width : 1200px) and (orientation : portrait){
-        @content
-    }
-};
+@mixin Tablette {
+  @media only screen and (min-width: 476px) and (max-width: 1200px) and (orientation: portrait) {
+    @content;
+  }
+}
 
-@mixin Desktop{
-    @media screen and (min-width : 1201px) and (max-width : 1550px){
-        @content
-    }
-};
+@mixin Desktop {
+  @media screen and (min-width: 1201px) and (max-width: 1550px) {
+    @content;
+  }
+}

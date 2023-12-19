@@ -1,153 +1,110 @@
 .page {
-    &__box {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 48%;
-        height: 68vh;
-        background-color: $page;
-        margin-top: 0.5%;
-        border-right: 2px solid darken($page, 20%);
-        border-top-right-radius: 15px;
-    }
-    &__box1{
-        width: 49%;
-        height: 68vh;
-        background-color: $page;
-        padding-left: 10px;
-        padding-right: 15px;
-        margin-top: 0.5%;
-        border-left: 2px solid darken($page, 20%);
-        border-top-left-radius: 15px;
-    }
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 48%;
+    height: 68vh;
+    background-color: $page;
+    margin-top: 0.5%;
+    border-right: 2px solid darken($page, 20%);
+    border-top-right-radius: 15px;
+  }
+  &__box1 {
+    width: 49%;
+    height: 68vh;
+    background-color: $page;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-top: 0.5%;
+    border-left: 2px solid darken($page, 20%);
+    border-top-left-radius: 15px;
+  }
 
-    &__img {
-        width: 70%;
-        height: 80%;
-        margin: auto;
-        border: 3px solid $primarycolor;
-        border-radius: 100px;
-        object-fit: cover ;
-        @include TabletteLand{
-            width: 25vw;
-            height: 35vh;
-        }
+  &__img {
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    border: 3px solid $primarycolor;
+    border-radius: 100px;
+    object-fit: cover;
+    @include TabletteLand {
+      width: 25vw;
+      height: 35vh;
     }
-    &__img1{
-        width: 200px;
-        height: 150px;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 30px;
-        border: 3px solid $primarycolor;
-        border-radius: 50px;
-        object-fit: cover ;
-        @include TabletteLand{
-            width: 10vw;
-            height: 15vh;
-        }
+  }
+  &__img1 {
+    width: 200px;
+    height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    border: 3px solid $primarycolor;
+    border-radius: 50px;
+    object-fit: cover;
+    @include TabletteLand {
+      width: 10vw;
+      height: 15vh;
     }
+  }
 
-    &__content {
-        width: 39vw;
-        height: 40vh;
-        margin-top: 30px;
-        line-height: 125%;
-        @include TabletteLand{
-            font-size: 14px;
-        }
-        &--title{
-            text-align: center;
-            text-decoration: underline;
-            text-decoration-color: $primarycolor;
-            font-size: 2em;
-            margin-bottom: 20px;
-            @include TabletteLand{
-                font-size: 1.5em;
-            }
-        }
-        &--text{
-            text-align: justify;
-            padding-bottom: 20px;
-        }
-        &--mail{
-            margin-top : 10px;
-        }
-        
+  &__content {
+    width: 39vw;
+    height: 40vh;
+    margin-top: 30px;
+    line-height: 125%;
+    @include TabletteLand {
+      font-size: 14px;
     }
-    &__content1{
-        display : flex;
-        justify-content: space-evenly;
-        &--title1{
-            text-align: center;
-            text-decoration: underline;
-            text-decoration-color: $primarycolor;
-            font-size: 2em;
-            margin-bottom: 20px;
-            @include TabletteLand{
-                font-size: 1.5em;
-            }
-        }
-        &__formation{
-            align-self: center;
-            padding-left: 15px;
-            padding-right: 15px;
-            &--title{
-                text-decoration: underline;
-                text-decoration-color: $primarycolor;
-            }
-        }
+    &--title {
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-color: $primarycolor;
+      font-size: 2em;
+      margin-bottom: 20px;
+      @include TabletteLand {
+        font-size: 1.5em;
+      }
     }
+    &--text {
+      text-align: justify;
+      padding-bottom: 20px;
+    }
+    &--mail {
+      margin-top: 10px;
+    }
+  }
+  &__content1 {
+    display: flex;
+    justify-content: space-evenly;
+    &--title1 {
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-color: $primarycolor;
+      font-size: 2em;
+      margin-bottom: 20px;
+      @include TabletteLand {
+        font-size: 1.5em;
+      }
+    }
+    &__formation {
+      align-self: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      &--title {
+        text-decoration: underline;
+        text-decoration-color: $primarycolor;
+      }
+    }
+  }
 
-    &__content2{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        &--title{
-            text-decoration: underline;
-            text-decoration-color: $primarycolor;
-        }
+  &__content2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    &--title {
+      text-decoration: underline;
+      text-decoration-color: $primarycolor;
     }
-
-    &__CV{
-        display: flex;
-        gap : 20px;
-        @include TabletteLand{
-            font-size: 14px; 
-            margin-top: 20px; 
-            margin-left: 20px;
-            margin-right: 20px;
-            gap: 10px; 
-                   
-        }
-        &--profil{
-            text-align: center;
-            & p{
-                margin-bottom: 20px;
-                @include TabletteLand{
-                    margin-bottom: 5px;
-                }
-            }
-            @include Desktop{
-                width: 50%;
-            }
-        }
-        &--text{
-            text-align: center;
-            & p{
-                margin-bottom: 20px;
-                @include Desktop{
-                    margin-bottom: 43px;
-                }
-            }
-            @include Desktop{
-                width: 50%;
-            }
-        }
-        &--textBtn{
-            @include TabletteLand{
-                display: flex;
-            }
-        }
-    }
+  }
 }

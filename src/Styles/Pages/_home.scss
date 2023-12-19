@@ -1,170 +1,224 @@
-.home{
-    &__info{
+.home {
+  &__info {
+    width: 100%;
+    text-align: justify;
+    justify-content: center;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1000px 300px;
+    background-color: lighten($secondarycolor, 5%);
+    @include TabletteLand {
+      grid-template-columns: 800px 200px;
+    }
+    @include Tablette {
+      grid-template-columns: 500px 300px;
+    }
+    @include Mobile {
+      display: none;
+    }
+    @include Desktop {
+      grid-template-columns: 1000px 400px;
+    }
+    &__text {
+      grid-row-end: 1;
+      align-self: center;
+      border-radius: 20px;
+      border: 3px solid $thirdcolor;
+      color: white;
+      background-color: $secondarycolor;
+      padding: 20px;
+      margin-left: 200px;
+      margin-right: 200px;
+      position: relative;
+      @include TabletteLand {
+        margin-right: 100px;
+        font-size: 14px;
+        width: 50%;
+      }
+      @include Tablette {
+        margin-right: 100px;
+        margin-left: 100px;
+      }
+      @include Mobile {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 14px;
+      }
+      @include Desktop {
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      & ::before {
+        content: "";
+        left: 100%;
+        bottom: 12.5%;
+        border: solid transparent;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left-color: $thirdcolor;
+        border-width: 35px;
+        @include Mobile {
+          display: none;
+        }
+      }
+      &::after {
+        content: "";
+        left: 100%;
+        bottom: 15%;
+        border: solid transparent;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left-color: $secondarycolor;
+        border-width: 30px;
+        @include Tablette {
+          bottom: 14%;
+          left: 99%;
+        }
+        @include Mobile {
+          display: none;
+        }
+      }
+      &--text--1 {
+        text-align: center;
+        grid-row-end: 2;
+      }
+    }
+    &--img {
+      width: 300px;
+      height: 500px;
+      object-fit: contain;
+      grid-row-end: 1;
+      transform: scaleX(-1);
+      @include TabletteLand {
+        width: 200px;
+        height: 500px;
+      }
+      @include Tablette {
+        width: 250px;
+        height: 500px;
+      }
+      @include Mobile {
+        display: none;
+      }
+    }
+  }
+  &__project {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-left: auto;
+    flex-wrap: wrap;
+    @include Mobile {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      flex-wrap: wrap-reverse;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    &__container {
+      width: 800px;
+      margin-right: auto;
+      margin-bottom: 150px;
+      @include TabletteLand {
+        width: 500px;
+        font-size: 14px;
+      }
+      @include Tablette {
+        width: 500px;
+        font-size: 14px;
+      }
+      @include Mobile {
         width: 100%;
+        margin-bottom: 20px;
+      }
+      @include Desktop {
+        width: 700px;
+      }
+    }
+    &--text {
+      text-align: center;
+      font-size: 1.2em;
+      @include Tablette {
+        font-size: 1em;
+      }
+      @include Mobile {
+        font-size: 14px;
+      }
+      @include Desktop {
+        font-size: 1em;
+      }
+    }
+    &__btn {
+      margin-top: 50px;
+      margin-left: 29%;
+      @include Tablette {
+        margin-left: 20%;
+      }
+      @include Mobile {
+        margin-left: 20%;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__activities {
+    margin-top: 70px;
+    width: 83%;
+    &__title {
+      font-size: 1.5em;
+      @include title;
+      margin-bottom: 2%;
+      @include Mobile {
+        font-size: 1em;
+        margin-bottom: 50px;
+      }
+      @include Tablette {
+        font-size: 1.5em;
+      }
+    }
+    &--text {
+      text-align: justify;
+      margin: auto;
+      margin-bottom: 2%;
+      &-title {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      @include Mobile {
         text-align: justify;
-        justify-content: center;
-        margin-top: 150px;
-        display: grid;
-        grid-template-columns: 1100px 300px;
-        background-color: lighten($secondarycolor, 5%);
-        @include TabletteLand{
-            grid-template-columns: 800px 200px;
-        }
-        @include Tablette{
-            grid-template-columns: 500px 300px;
-        }
-        @include Mobile{
-            grid-template-columns: 100%;
-            margin-top: 70px;
-            height: 400px;
-        }
-        @include Desktop{
-            grid-template-columns: 1000px 400px;
-        }
-        &__text{
-            grid-row-end: 1;
-            align-self: center;
-            border-radius: 20px;
-            border: 3px solid $thirdcolor;
-            color: white;
-            background-color: $secondarycolor;
-            padding: 20px;
-            margin-left: 200px;
-            margin-right: 200px;
-            position: relative;
-            @include TabletteLand{
-                margin-right: 100px;
-                font-size: 14px;
-                width: 50%;
-            }
-            @include Tablette{
-                margin-right: 100px;
-                margin-left: 100px;
-            }
-            @include Mobile{
-                margin-left: 5%;
-                margin-right: 5%;
-                font-size: 14px;
-            }
-            @include Desktop{
-                margin-left: 150px;
-                margin-right: 150px;
-            }
-            & ::before{
-                content: "";
-                left : 100%;
-                bottom: 12.5%;
-                border : solid transparent;
-                width: 0;
-                height: 0;
-                position: absolute; 
-                border-left-color: $thirdcolor;
-                border-width: 35px;
-                @include Mobile{
-                    display: none;
-                }
-            }
-            &::after{
-                content: "";
-                left : 100%;
-                bottom: 15%;
-                border : solid transparent;
-                width: 0;
-                height: 0;
-                position: absolute; 
-                border-left-color: $secondarycolor;
-                border-width: 30px;
-                @include Tablette{
-                    bottom: 14%;
-                    left: 99%;
-                }
-                @include Mobile{
-                    display: none;
-                }
-            }
-            &--text--1{
-            text-align: center;
-            grid-row-end: 2;
-        }
-        }
-        &--img{
-            width: 300px;
-            height: 600px;
-            object-fit: contain;
-            grid-row-end: 1;
-            transform: scaleX(-1);
-            @include TabletteLand{
-                width: 200px;
-                height: 500px;
-            }
-            @include Tablette{
-                width: 250px;
-                height: 500px;
-            }
-            @include Mobile{
-                display: none;
-            }
-        }
+        width: 80%;
+      }
     }
-    &__project{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 150px;
-        margin-bottom: 100px;
-        @include Mobile{
-            margin-top: 50px;
-            margin-bottom: 50px;
-            flex-wrap: wrap-reverse;
-            margin-left: 3%;
-            margin-right: 3%;
-        }
-        &__container{
-            width: 800px;
-            @include TabletteLand{
-                width: 500px;
-                font-size: 14px;
-            }
-            @include Tablette{
-                width: 500px;
-                font-size: 14px;
-            }
-            @include Mobile{
-                width: 100%;
-                font-size: 14px;
-                margin-bottom: 20px;
-            }
-            @include Desktop{
-                width: 700px;
-            }
-        }
-        &--text{
-            text-align: center;
-            font-size: 1.2em;
-            @include Tablette{
-                font-size: 1em;
-            }
-            @include Mobile {
-                font-size: 14px;
-            }
-            @include Desktop{
-                font-size: 1em;
-            }
-        }
-        &__btn{
-            margin-top: 50px;
-            margin-left: 25%;
-            @include Tablette{
-                margin-left: 20%;
-            }
-            @include Mobile{
-                margin-left: 20%;
-                margin-top: 20px;
-            }
-        }
+  }
+  &__diplome {
+    background-color: $thirdcolor;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    @include Mobile {
+      margin-top: 40px;
     }
+  }
+
+  &__loisirs {
+    margin-top: 100px;
+
+    @include Mobile {
+      margin-top: 40px;
+    }
+
+    & .presentation {
+      width: 90%;
+    }
+  }
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: black;
 }

@@ -1,38 +1,50 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-body{
-    width: 100%; 
-    background: url(../../Assets/fondRose.webp) no-repeat;
-    background-attachment: fixed;
-    //blend-mode et color, me serve à réaliser l'opacity de l'image en arrière-plan
-    background-blend-mode: lighten;
-    background-color: rgba(255, 255, 255, 0.724);    
+body {
+  width: 100%;
+  background: url(../../Assets/fondRose.webp) no-repeat;
+  background-attachment: fixed;
+  //blend-mode et color, me serve à réaliser l'opacity de l'image en arrière-plan
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.724);
 }
-.homeContainer{
-    font-family: 'Lora', verdana, sans-serif;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.4;
-    
+.homeContainer {
+  font-family: "Lora", verdana, sans-serif;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  & p {
+    @include Mobile {
+      font-size: 14px;
+    }
+  }
 }
-.projectConatainer{
-    font-family: 'Lora', verdana, sans-serif;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.4;
+.projectConatainer {
+  font-family: "Lora", verdana, sans-serif;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  & p {
+    @include Mobile {
+      font-size: 14px;
+    }
+  }
 }
-.aboutContainer{
-    font-family: 'Lora', verdana, sans-serif;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.4;
+.aboutContainer {
+  font-family: "Lora", verdana, sans-serif;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  & p {
+    @include Mobile {
+      font-size: 14px;
+    }
+  }
 }
-
-
