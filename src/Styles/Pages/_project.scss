@@ -1,44 +1,45 @@
 .project {
-    &__slider {
-        width: 100%;
-        height: 500px;
-        margin-top: 90px;
-        background-color: $primarycolor;
-        vertical-align: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include Tablette{
-            height: 300px;
-        }
-        @include Mobile{
-            height: 350px;
-            margin-top: 50px;
-        }
+  &__slider {
+    width: 100%;
+    height: 500px;
+    margin-top: 90px;
+    background-color: $primarycolor;
+    vertical-align: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include Tablette {
+      height: 300px;
     }
-
-    &__detail {
-        margin-top: 100px;
-        @include Tablette{
-            margin-top: 50px;
-        }
-        @include Mobile{
-            margin-top: 40px;
-        }
+    @include Mobile {
+      height: 350px;
+      margin-top: 50px;
     }
+  }
 
+  &__detail {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    @include Tablette {
+      margin-top: 50px;
+    }
+    @include Mobile {
+      margin-top: 40px;
+    }
+  }
 }
 
 .fa-js {
-    color: #f0db4f;
+  color: #f0db4f;
 }
 
 .fa-react {
-    color: #88dded;
+  color: #88dded;
 }
-.fa-sass{
-    color: #cc6699;
+.fa-sass {
+  color: #cc6699;
 }
-.fa-node-js{
-    color : #3c873a;
+.fa-node-js {
+  color: #3c873a;
 }

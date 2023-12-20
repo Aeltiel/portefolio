@@ -26,7 +26,7 @@ function App() {
       <div className="App">
         <Routes>
           {mobile ? (
-            <Route path="/Bibliotheque" element={<Home />} />
+            <Route path="/" element={<Home />} />
           ) : (
             <Route path="/" element={<Bibliothèque />} />
           )}

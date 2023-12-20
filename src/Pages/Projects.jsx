@@ -6,13 +6,11 @@ import Presentation from "../Component/Présentation";
 import Slider from "../Component/Slider";
 import Title from "../Component/Title";
 import Container from "../Component/Container";
-import Button from "../Component/Button";
-import ReduxIcon from "../Assets/redux-icon.webp";
-import ReactNative from "../Assets/ReactNative.webp";
+import ProjectItems from "../Component/ProjectItems";
+import { icons } from "../Data/icons";
 import { setInfos } from "../Reduxtore/InfoRedux";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 function Projects() {
   const dispatch = useDispatch();
@@ -40,7 +38,17 @@ function Projects() {
             <Slider />
           </div>
           <div className="project__detail">
-            {data.projects.map((element) => (
+            <ProjectItems
+              language={icons[0].icon.map((icon) => {
+                return (
+                  <>
+                    {icon.icon}
+                    {icon.iconimg && <img src={icon.iconimg} />}
+                  </>
+                );
+              })}
+            />
+            {/*data.projects.map((element) => (
               <Container
                 key={element.id}
                 id={element.id}
@@ -49,7 +57,7 @@ function Projects() {
                 description={element.description}
                 language={element.Langages}
               />
-            ))}
+            ))*/}
           </div>
         </main>
         <Footer />
