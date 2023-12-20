@@ -92,8 +92,11 @@
         justify-content: center;
       }
       & span {
-        font-weight: bold;
-        font-size: 1.2em;
+        & a {
+          font-size: 2em;
+          color: $primarycolor;
+          margin-top: 15px;
+        }
 
         & :hover {
           color: $thirdcolor;

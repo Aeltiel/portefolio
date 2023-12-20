@@ -40,9 +40,11 @@ function Reseaux() {
         <div className="presentation__CV--profil">
           <p>
             Et si vous souhaitez entrer directement en contact avec moi
-            n'hésitez pas à m'écrire un{" "}
+            n'hésitez pas à m'écrire un mail{" "}
             <span>
-              <a href="mailto:ingrid.stemer@live.fr">mail</a>
+              <a href="mailto:stemer.ingrid36@gmail.com">
+                <i class="fa-solid fa-paper-plane"></i>
+              </a>
             </span>
           </p>
         </div>
