@@ -5,9 +5,7 @@ import Book from "../Data/book.json";
 import Presentation from "../Component/Présentation";
 import Slider from "../Component/Slider";
 import Title from "../Component/Title";
-import Container from "../Component/Container";
 import ProjectItems from "../Component/ProjectItems";
-import { icons } from "../Data/icons";
 import { setInfos } from "../Reduxtore/InfoRedux";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
@@ -38,26 +36,17 @@ function Projects() {
             <Slider />
           </div>
           <div className="project__detail">
-            <ProjectItems
-              language={icons[0].icon.map((icon) => {
-                return (
-                  <>
-                    {icon.icon}
-                    {icon.iconimg && <img src={icon.iconimg} />}
-                  </>
-                );
-              })}
-            />
-            {/*data.projects.map((element) => (
-              <Container
-                key={element.id}
-                id={element.id}
-                image={element.image}
-                title={element.title}
-                description={element.description}
-                language={element.Langages}
-              />
-            ))*/}
+            {data.projects.map((project) => {
+              return (
+                <ProjectItems
+                  key={project.id}
+                  title={project.title}
+                  date={project.date}
+                  img={project.image}
+                  description={project.description}
+                />
+              );
+            })}
           </div>
         </main>
         <Footer />

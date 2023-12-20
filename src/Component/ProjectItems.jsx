@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ProjectItems({ language }) {
+function ProjectItems({ title, date, img, description }) {
   const [open, setOpen] = useState(false);
 
   function openItem() {
@@ -16,11 +16,16 @@ function ProjectItems({ language }) {
           <i className="fa-solid fa-folder"></i>
         )}
         <div className="items__bar--title">
-          <p>Titre</p>
-          <p>date</p>
+          <p>{title}</p>
         </div>
       </div>
-      {open && <div>{language}</div>}
+      {open && (
+        <div className="items__details">
+          <img src={img} alt="project screen" className="items__details--img" />
+          <div className="items__details--date">{date}</div>
+          <p className="items__details--text">{description}</p>
+        </div>
+      )}
     </div>
   );
 }
