@@ -1,6 +1,92 @@
 .items {
   &__container {
+    width: 30%;
+  }
+  &__bar {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    border: 3px solid $thirdcolor;
+    border-radius: 15px;
+    background-color: $primarycolor;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    & i {
+      font-size: 1.5em;
+      color: $thirdcolor;
+    }
+    &--title {
+      width: 90%;
+      justify-content: space-between;
+      display: flex;
+    }
+  }
+  &__details {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 3px solid $thirdcolor;
+    border-radius: 15px;
+    background-color: $primarycolor;
+    position: relative;
+    &::before {
+      content: "";
+      left: 45%;
+      bottom: 100%;
+      border: solid transparent;
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-bottom-color: $thirdcolor;
+      border-width: 20px;
+    }
+    &::after {
+      content: "";
+      left: 46.2%;
+      bottom: 100%;
+      border: solid transparent;
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-bottom-color: $primarycolor;
+      border-width: 15px;
+    }
+    &--img {
+      width: 100%;
+      height: 400px;
+      object-fit: contain fill;
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+    }
+
+    &--icon {
+      background-color: $secondarycolor;
+      width: 35%;
+      position: absolute;
+      left: 64.5%;
+      top: 3%;
+      font-size: 1.5em;
+      text-align: right;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      border: 2px solid $thirdcolor;
+      align-self: center;
+      & span {
+        margin-right: 10px;
+      }
+    }
+
+    &--iconimg {
+      width: 40px;
+    }
+
+    &--text {
+      padding: 10px 15px 20px 15px;
+      color: white;
+      font-size: 0.9em;
+      text-align: justify;
+    }
   }
 }

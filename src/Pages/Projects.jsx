@@ -44,6 +44,7 @@ function Projects() {
                   date={project.date}
                   img={project.image}
                   description={project.description}
+                  langage={project.langage}
                 />
               );
             })}

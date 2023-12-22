@@ -1,7 +1,7 @@
 .project {
   &__slider {
     width: 100%;
-    height: 500px;
+    height: 400px;
     margin-top: 90px;
     background-color: $primarycolor;
     vertical-align: 50%;
@@ -18,9 +18,10 @@
   }
 
   &__detail {
-    margin-top: 100px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10%;
+    gap: 50px;
     @include Tablette {
       margin-top: 50px;
     }
