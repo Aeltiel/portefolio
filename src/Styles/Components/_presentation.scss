@@ -19,7 +19,7 @@
     line-height: 3;
 
     @include Tablette {
-      font-size: 18px;
+      font-size: 1.5em;
     }
     @include Mobile {
       font-size: 1em;
@@ -82,9 +82,16 @@
 
     &--profil {
       width: 30%;
+      @include Mobile {
+        width: 100%;
+        margin-bottom: 20px;
+      }
       & p {
         margin-top: 30px;
         text-align: center;
+        @include Mobile {
+          margin-top: 20px;
+        }
       }
 
       & a {

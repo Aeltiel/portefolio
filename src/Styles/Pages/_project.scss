@@ -12,7 +12,7 @@
       height: 300px;
     }
     @include Mobile {
-      height: 350px;
+      height: 300px;
       margin-top: 50px;
     }
   }
@@ -23,7 +23,12 @@
     margin: 10%;
     gap: 50px;
     @include Tablette {
-      margin-top: 50px;
+      margin: 30px;
+      justify-content: center;
+    }
+    @include TabletteLand {
+      margin: 50px;
+      justify-content: center;
     }
     @include Mobile {
       margin-top: 40px;

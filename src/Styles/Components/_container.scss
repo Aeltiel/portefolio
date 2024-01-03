@@ -1,118 +1,120 @@
 //fiche css pour géré l'apparition alterner dans le portefolio classique des data des projets
 .container {
-    &__box {
-        width: 80%;
-        height: 500px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        display: flex;
-        gap: 50px;
-
-        @include Tablette {
-            flex-wrap: wrap;
-            height: 1100px;
-        }
-
-        @include Mobile {
-            width: 300px;
-            height: 100%;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 20px;
-        }
-    }
-
-    &__img {
-        width: 700px;
-        height: 450px;
-        object-fit: fill;
-        border: solid 4px $thirdcolor;
-        border-radius: 40px;
-        box-shadow: -10px 5px 8px $secondarycolor;
-        align-self: center;
-
-        @include TabletteLand {
-            width: 400px;
-            height: 350px;
-        }
-
-        @include Tablette {
-            width: 600px;
-            height: 350px;
-        }
-
-        @include Mobile {
-            width: 300px;
-            height: 200px;
-            align-items: center;
-        }
-        @include Desktop{
-            width: 600px;
-            height: 400px;
-        }
-    }
-
-    &__text {
-        text-align: justify;
-        align-self: center;
-
-        @include TabletteLand {
-            font-size: 16px;
-        }
-
-        @include Mobile {
-            font-size: 14px;
-        }
-
-        &--title {
-            text-align: center;
-            text-decoration: underline;
-            text-decoration-color: $primarycolor;
-            margin-bottom: 20px;
-
-            @include Mobile {
-                margin-bottom: 10px;
-            }
-        }
-
-        &--langage {
-            margin-top: 20px;
-            text-align: center;
-
-            & span {
-                text-decoration: underline;
-                text-decoration-color: $primarycolor;
-            }
-        }
-    }
-}
-
-.Twist {
-    display: flex;
-    flex-direction: row-reverse;
+  &__box {
     width: 80%;
     height: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    display: flex;
     gap: 50px;
 
-    @include TabletteLand {
-        font-size: 14px;
-    }
-
     @include Tablette {
-        height: 1100px;
-        flex-wrap: wrap;
-
+      flex-wrap: wrap;
+      height: 600px;
+      gap: 0;
     }
 
     @include Mobile {
-        width: 300px;
-        height: 100%;
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 20px;
+      width: 300px;
+      height: 100%;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
     }
+  }
+
+  &__img {
+    width: 700px;
+    height: 450px;
+    object-fit: fill;
+    border: solid 4px $thirdcolor;
+    border-radius: 40px;
+    box-shadow: -10px 5px 8px $secondarycolor;
+    align-self: center;
+
+    @include TabletteLand {
+      width: 400px;
+      height: 350px;
+    }
+
+    @include Tablette {
+      width: 600px;
+      height: 300px;
+      margin: auto;
+    }
+
+    @include Mobile {
+      width: 300px;
+      height: 200px;
+      align-items: center;
+    }
+    @include Desktop {
+      width: 600px;
+      height: 400px;
+    }
+  }
+
+  &__text {
+    text-align: justify;
+    align-self: center;
+
+    @include TabletteLand {
+      font-size: 16px;
+    }
+
+    @include Mobile {
+      font-size: 14px;
+    }
+
+    &--title {
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-color: $primarycolor;
+      margin-bottom: 20px;
+
+      @include Mobile {
+        margin-bottom: 10px;
+      }
+    }
+
+    &--langage {
+      margin-top: 20px;
+      text-align: center;
+
+      & span {
+        text-decoration: underline;
+        text-decoration-color: $primarycolor;
+      }
+    }
+  }
+}
+
+.Twist {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  gap: 50px;
+
+  @include TabletteLand {
+    font-size: 14px;
+  }
+
+  @include Tablette {
+    flex-wrap: wrap;
+    height: 600px;
+    gap: 0;
+  }
+
+  @include Mobile {
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
 }

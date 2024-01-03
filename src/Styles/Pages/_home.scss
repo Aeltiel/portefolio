@@ -115,6 +115,9 @@
     font-size: 1.5em;
     background-color: $secondarycolor;
     color: white;
+    @include Mobile {
+      font-size: 1em;
+    }
     &--ul {
       display: flex;
       list-style-type: none;
@@ -138,9 +141,9 @@
     margin-left: auto;
     flex-wrap: wrap;
     @include Mobile {
-      margin-top: 50px;
+      margin-top: 0;
       margin-bottom: 50px;
-      flex-wrap: wrap-reverse;
+      flex-wrap: wrap;
       margin-left: 3%;
       margin-right: 3%;
     }
@@ -154,7 +157,7 @@
       }
       @include Tablette {
         width: 500px;
-        font-size: 14px;
+        margin: auto;
       }
       @include Mobile {
         width: 100%;
@@ -168,7 +171,7 @@
       text-align: center;
       font-size: 1.2em;
       @include Tablette {
-        font-size: 1em;
+        font-size: 1.2em;
       }
       @include Mobile {
         font-size: 14px;
@@ -193,6 +196,10 @@
   &__activities {
     margin-top: 70px;
     width: 83%;
+    @include Mobile {
+      margin-top: 25px;
+      width: 100%;
+    }
     &__title {
       font-size: 1.5em;
       @include title;

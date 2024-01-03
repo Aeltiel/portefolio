@@ -1,6 +1,15 @@
 .items {
   &__container {
     width: 30%;
+    @include Tablette {
+      width: 40%;
+    }
+    @include TabletteLand {
+      width: 40%;
+    }
+    @include Mobile {
+      width: 90%;
+    }
   }
   &__bar {
     display: flex;
@@ -61,6 +70,15 @@
       border-top-right-radius: 12px;
       border-top-left-radius: 12px;
       animation: deroulerimg 1s ease-in-out;
+      @include Tablette {
+        height: 300px;
+      }
+      @include TabletteLand {
+        height: 300px;
+      }
+      @include Mobile {
+        height: 300px;
+      }
     }
 
     &--icon {
@@ -74,16 +92,30 @@
       border-top-left-radius: 12px;
       border-bottom-left-radius: 12px;
       border: 2px solid $thirdcolor;
-      align-self: center;
       opacity: 0;
       animation: hide 1s ease-in-out 0.2s reverse forwards;
       & span {
         margin-right: 10px;
       }
+      @include Desktop {
+        width: 50%;
+        left: 49.5%;
+      }
+      @include Tablette {
+        width: 50%;
+        left: 49.5%;
+      }
+      @include Mobile {
+        width: 50%;
+        left: 49.5%;
+      }
     }
 
     &--iconimg {
       width: 40px;
+      @include Mobile {
+        width: 30px;
+      }
     }
 
     &--text {
