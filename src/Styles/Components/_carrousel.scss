@@ -1,54 +1,71 @@
-.carrousel {
-    &__Container {
-        display: flex;
-        width: 78vw;
-        height: 68vh;
-        overflow: hidden;
-        background-color: $page;
-        margin: auto;
-        margin-top: 0.5%;
-        position: relative;
+.carrousel {    
+    &__box {
         @include TabletteLand{
             font-size: 14px;
         }
-    }
-    
-    &__box {
-        width: 78vw;
-        height: 65vh;
-        animation: pulse 2s ease-in backwards;
         &--title {
             text-align: center;
             font-size: 2em;
             text-decoration: underline;
             text-decoration-color: $primarycolor;
+            margin-bottom: 3%;
+            height: 10%;
         }
 
         &__book {
             display: flex;
             justify-content: center;
-            width: 78vw;
-            height: 60vh;
-            gap: 20px;
+            padding-top: 2%;
+            background-color: $page;
+            padding-right: 2%;
+            margin-top: 0.5%;
+            position: relative;
+            width: 50%;
+            height: 66vh;
             font-size: 1em;
             line-height: 125%;
-            margin-top: 15px;
+            border-right: 2px solid darken($page, 20%);
+            border-top-right-radius: 15px;
 
             &--text {
-                margin-left: 35px;
+                margin-left: 30px;
                 text-align: justify;
             }
 
             &--langage {
                 text-align: center;
                 margin-top: 10px;
+                display: flex;
+                font-size: 3em;
+                justify-content: center;
+                gap: 50px;
+                align-items: center;
+                &--img{
+                    width: 80px;
+                height: 80px;
+                object-fit: contain;
+                }
             }
+        }
+
+        &__book1{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            height: 66vh;
+            padding-top: 2%;
+            background-color: $page;
+            margin-right: 1%;
+            margin-top: 0.5%;
+            position: relative;
+            border-left: 2px solid darken($page, 20%);
+            border-top-left-radius: 15px;
         }
 
         &--img {
             width: 35vw;
             height: 55vh;
-            margin-right: 40px;
+            margin: auto;
             border: 3px solid $primarycolor;
             border-radius: 20px;
         }
@@ -56,7 +73,7 @@
 
     &__Right {
         position: absolute;
-        left: 98%;
+        left: 97%;
         top: 48%;
         background-color: transparent;
         border: none;
@@ -68,6 +85,7 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
+        z-index: 10;
     }
 }
 
@@ -79,4 +97,8 @@
 .fa-caret-down {
     transform: rotate(-90deg);
     font-size: 1.2em;
+}
+
+.transition{
+    animation: hide 1s ease-in-out reverse;
 }

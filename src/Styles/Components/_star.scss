@@ -1,49 +1,65 @@
 .starbox{
     height: 41%;
     width: 11%;
-    display: flex;
-    justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.172);
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.172));
     color: white;
     position: absolute;
-    left: 82%;
-    top: 35%;
+    left: 81%;
+    top: 34%;
     @include Mobile{
         display: none;
     }
 }
 .fa-star{
     opacity: 0;
+    @include starPosition;
     animation: apparition 10s infinite forwards alternate-reverse;
     
     &:nth-child(2){
         animation-delay: 2s;
+        @include starPosition;
+        left: 20%;
     }
     &:nth-child(3){
         animation-delay: 3s;
+        @include starPosition;
+        left: 40%;
     }
     &:nth-child(4){
         animation-delay: 4s;
+        @include starPosition;
+        left : 60%
     }
     &:nth-child(5){
         animation-delay: 5s;
+        @include starPosition;
+        left: 80%;
     }
 }
 .star1{
     opacity: 0;
+    @include starPosition;
     animation: apparition 10s 6s infinite forwards alternate-reverse;
     
     &:nth-child(2){
         animation-delay: 7s;
+        @include starPosition;
+        left: 20%;
     }
     &:nth-child(3){
         animation-delay: 8s;
+        @include starPosition;
+        left: 40%;
     }
     &:nth-child(4){
         animation-delay: 9s;
+        @include starPosition;
+        left : 60%
     }
     &:nth-child(5){
         animation-delay: 10s;
+        @include starPosition;
+        left: 80%;
 }
 }

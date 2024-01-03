@@ -1,123 +1,122 @@
 @use "sass:math";
 
 .bookContainer {
-    width: $largeWidthBook;
-    height: $heightBook;
-    perspective: 1000px;
-    //pour faire bouger le livre sans toucher à son inclinaison, je dois mettre l'animation dans le container
-    animation: levitation 2s infinite ease-in-out alternate-reverse;
+  width: $largeWidthBook;
+  height: $heightBook;
+  perspective: 1000px;
+  //pour faire bouger le livre sans toucher à son inclinaison, je dois mettre l'animation dans le container
+  animation: levitation 2s infinite ease-in-out alternate-reverse;
 
-    &:nth-child(2) {
-        animation-delay: 2s;
-    }
+  &:nth-child(2) {
+    animation-delay: 2s;
+  }
 
-    &:nth-child(3) {
-        animation-delay: 3s;
-    }
+  &:nth-child(3) {
+    animation-delay: 3s;
+  }
 
-    &:nth-child(4) {
-        animation-delay: 4s;
-    }
-    @include TabletteLand{
-        perspective: 3000px;
-    }
-    @include Mobile{
-        display: none;
-    }
+  &:nth-child(4) {
+    animation-delay: 4s;
+  }
+  @include TabletteLand {
+    perspective: 3000px;
+  }
+  @include Mobile {
+    display: none;
+  }
 }
 
 .book {
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateX(20deg) rotateY(10deg);
-    padding-top: 150px;
-    @include TabletteLand{
-        padding-top: 70px;
-    }
-    &_side {
-        position: absolute;
-        margin: 0;
-    }
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(20deg) rotateY(10deg);
+  padding-top: 150px;
+  @include TabletteLand {
+    padding-top: 70px;
+  }
+  &_side {
+    position: absolute;
+    margin: 0;
+  }
 }
 
 .front {
-    cursor: pointer;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    width: $largeWidthBook;
-    height: ($heightBook +5);
-    border: solid darken($couverture, 10%) 3px;
-    background-color: $couverture;
-    transform: rotateY(0deg) translateZ(11px);
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: $largeWidthBook;
+  height: ($heightBook + 5);
+  border: solid darken($couverture, 10%) 3px;
+  background-color: $couverture;
+  transform: rotateY(0deg) translateZ(11px);
 
-    &--title {
-        margin-top: 25px;
-        padding: 3px;
-        font-size: 13px;
-        border: solid darken($gold, 25%) 2px;
-        border-radius: 5px;
-        align-self: center;
+  &--title {
+    margin-top: 25px;
+    padding: 3px;
+    font-size: 13px;
+    border: solid darken($gold, 25%) 2px;
+    border-radius: 5px;
+    align-self: center;
+  }
+
+  &--icons {
+    align-self: center;
+    position: relative;
+
+    & .fa-lock-open {
+      position: absolute;
+      left: 40%;
     }
-
-    &--icons {
-        align-self: center;
-        position: relative;
-
-        & .fa-lock-open {
-            position: absolute;
-            left: 40%;
-            
-        }
-    }
+  }
 }
 
 .back {
-    width: $largeWidthBook;
-    height: $heightBook;
-    border: solid darken($couverture, 10%) 3px;
-    background-color: $couverture;
-    transform: rotateY(-172deg) translateZ(14px);
+  width: $largeWidthBook;
+  height: $heightBook;
+  border: solid darken($couverture, 10%) 3px;
+  background-color: $couverture;
+  transform: rotateY(-172deg) translateZ(14px);
 }
 
 .left {
-    height: $heightBook;
-    width: $smallWidthBook;
-    border-top: solid darken($couverture, 10%) 3px;
-    border-bottom: solid darken($couverture, 10%) 3px;
-    border-right: solid darken($couverture, 10%) 3px;
-    background-color: $couverture;
-    transform: rotateY(94deg) translateZ(-15.5px);
+  height: $heightBook;
+  width: $smallWidthBook;
+  border-top: solid darken($couverture, 10%) 3px;
+  border-bottom: solid darken($couverture, 10%) 3px;
+  border-right: solid darken($couverture, 10%) 3px;
+  background-color: $couverture;
+  transform: rotateY(94deg) translateZ(-15.5px);
 }
 
 .right {
-    height: $heightBook;
-    width: $smallWidthBook;
-    background-color: $page;
-    transform: rotateY(95deg) translateZ(84px);
+  height: $heightBook;
+  width: $smallWidthBook;
+  background-color: $page;
+  transform: rotateY(95deg) translateZ(84px);
 }
 
 .top {
-    height: $smallHeightBook;
-    width: $largeWidthBook;
-    background-color: $couverture;
-    transform: rotateX(74deg) translateZ(math.div($smallHeightBook, 2));
+  height: $smallHeightBook;
+  width: $largeWidthBook;
+  background-color: $couverture;
+  transform: rotateX(74deg) translateZ(math.div($smallHeightBook, 2));
 }
 
 .bottom {
-    height: $smallHeightBook;
-    width: $largeWidthBook;
-    background-color: $page;
-    transform: rotateX(270deg) translateZ(143px);
+  height: $smallHeightBook;
+  width: $largeWidthBook;
+  background-color: $page;
+  transform: rotateX(270deg) translateZ(143px);
 }
 
 .ouvert {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 20;
 }

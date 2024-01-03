@@ -1,12 +1,17 @@
 .parcheminButton{
     width: 10%;
-    height: 18%;
+    height: 16.5%;
     position: absolute;
-    top: 81%;
-    left: 47%;
+    top: 80.7%;
+    left: 46.5%;
+    padding: 0;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    box-shadow: 3px 3px 23px 0px #FFFFFF;
+    border-radius: 15px;
+    transform: skewX(2deg);
+    animation : hide 0.8s ease-in-out infinite alternate-reverse;
 }
 
 .openQuest{

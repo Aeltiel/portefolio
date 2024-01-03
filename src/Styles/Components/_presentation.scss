@@ -1,54 +1,131 @@
 .presentation {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 80px;
+  flex-wrap: wrap;
+  @include Mobile {
+    gap: 20px;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include title;
+    line-height: 3;
+
+    @include Tablette {
+      font-size: 1.5em;
+    }
+    @include Mobile {
+      font-size: 1em;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    width: 75%;
+    text-align: justify;
+    @include Mobile {
+      text-align: justify;
+      width: 90%;
+      font-size: 14px;
+    }
+  }
+
+  &__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid 5px $primarycolor;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    @include Mobile {
+      width: 150px;
+      height: 150px;
+      margin: auto;
+    }
+  }
+  &__reseaux {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
+    align-items: center;
     justify-content: center;
-    gap: 80px;
-    @include Mobile{
-        gap: 20px;
-        width: 90%;
-        flex-direction: column;
-    }
-    
-    &__title {
-        text-align: center;
-        text-decoration: underline;
-        text-decoration-color: $secondarycolor;
-        color: $primarycolor;
-        line-height: 3;
-        
-        @include Tablette {
-            font-size: 18px;
-        }
-        @include Mobile{
-            font-size: 1em;
-            width: 100%;
-        }
+    gap: 40px;
+
+    @include Mobile {
+      width: 90%;
+      gap: 15px;
     }
 
-    &__text {
-        width: 75%;
-        text-align: center;
-        @include Mobile{
-            text-align: justify;
-            width: 90%;
-            font-size: 14px;
-        }
+    & a {
+      font-size: 3em;
+    }
+  }
+  &__CV {
+    display: flex;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    @include Tablette {
+      flex-wrap: wrap;
     }
 
-    &__img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: solid 5px $primarycolor;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        @include Mobile{
-            width: 150px;
-            height: 150px;
-            margin: auto;
-        }
+    @include Mobile {
+      flex-wrap: wrap;
     }
+
+    &--profil {
+      width: 30%;
+      @include Mobile {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      & p {
+        margin-top: 30px;
+        text-align: center;
+        @include Mobile {
+          margin-top: 20px;
+        }
+      }
+
+      & a {
+        display: flex;
+        justify-content: center;
+      }
+      & span {
+        & a {
+          font-size: 2em;
+          color: $primarycolor;
+          margin-top: 15px;
+        }
+
+        & :hover {
+          color: $thirdcolor;
+        }
+      }
+    }
+  }
+}
+.fa-linkedin {
+  color: #0e76a8;
+}
+
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
