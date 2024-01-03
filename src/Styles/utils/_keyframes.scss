@@ -111,3 +111,22 @@
     opacity: 0;
   }
 }
+
+//animation for project
+@keyframes derouler {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes deroulerimg {
+  from {
+    height: 0;
+  }
+  to {
+    max-height: 100%;
+  }
+}

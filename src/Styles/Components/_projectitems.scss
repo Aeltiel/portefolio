@@ -31,6 +31,7 @@
     border-radius: 15px;
     background-color: $primarycolor;
     position: relative;
+    animation: derouler 1s ease-in-out;
     &::before {
       content: "";
       left: 45%;
@@ -59,6 +60,7 @@
       object-fit: contain fill;
       border-top-right-radius: 12px;
       border-top-left-radius: 12px;
+      animation: deroulerimg 1s ease-in-out;
     }
 
     &--icon {
@@ -73,6 +75,8 @@
       border-bottom-left-radius: 12px;
       border: 2px solid $thirdcolor;
       align-self: center;
+      opacity: 0;
+      animation: hide 1s ease-in-out 0.2s reverse forwards;
       & span {
         margin-right: 10px;
       }
@@ -87,6 +91,8 @@
       color: white;
       font-size: 0.9em;
       text-align: justify;
+      opacity: 0;
+      animation: hide 1s ease-in-out 0.2s reverse forwards;
     }
   }
 }
