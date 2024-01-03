@@ -14,5 +14,3 @@ Ainsi mon portefolio est construit avec deux visages :
 tablette etc.
 
 Bien sur, lors d'une visite sur smartphone, la bibliothèque ne sera pas disponible et vous pourrez accéder au portefolio avec la présentation plus classique. Alors que sur tablette, le système est un peu différent, tout dépend de l'orientation de votre appareil, je vous laisse découvrir tout ceci.
-
-test
