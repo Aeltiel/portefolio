@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ProjectItems({ title, date, img, description, langage }) {
+function ProjectItems({ title, date, img, description, langage, lien }) {
   const [open, setOpen] = useState(false);
 
   function openItem() {
@@ -16,7 +16,12 @@ function ProjectItems({ title, date, img, description, langage }) {
           <i className="fa-solid fa-folder"></i>
         )}
         <div className="items__bar--title">
-          <p>{title}</p>
+          <p>
+            {title}{" "}
+            <a href={lien} target="_blank">
+              <i className="fa-brands fa-github"></i>
+            </a>
+          </p>
           <p>{date}</p>
         </div>
       </div>

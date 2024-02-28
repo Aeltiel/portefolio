@@ -41,6 +41,7 @@ function Projects() {
                 <ProjectItems
                   key={project.id}
                   title={project.title}
+                  lien={project.lien}
                   date={project.date}
                   img={project.image}
                   description={project.description}

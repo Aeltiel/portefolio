@@ -1,47 +1,47 @@
-.paper{
-    &__container{
-        width: 39vw;
-        height: 78vh;
-        background-color: $page;
-        margin: auto;
-        margin-top: 1%;
+.paper {
+  &__container {
+    width: 39vw;
+    height: 78vh;
+    background-color: $page;
+    margin: auto;
+    margin-top: 1%;
+    color: black;
+  }
+  &__title {
+    text-align: center;
+    padding-top: 2%;
+    font-size: 1.5em;
+    @include TabletteLand {
+      font-size: 1.2em;
+      padding-top: 30px;
     }
-    &__title{
-        text-align: center;
-        padding-top: 2%;
-        font-size: 1.5em;
-        @include TabletteLand{
-            font-size: 1.2em;
-            padding-top: 30px;
-        }
+  }
+  &__list {
+    list-style-type: none;
+    padding-top: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    @include TabletteLand {
+      padding-left: 3%;
+      padding-right: 3%;
+      font-size: 18px;
     }
-    &__list{
-        list-style-type: none;
-        padding-top: 5%;
-        padding-right: 5%;
-        text-align: justify;
-        @include TabletteLand{
-           padding-left: 3%;
-           padding-right: 3%;
-           font-size: 18px;
-        }
-        &__quest{
-            padding-bottom: 5%;
-            &--text{
-                font-size: 0.8em;
-            }
-        }
+    &__quest {
+      padding-bottom: 5%;
+      &--text {
+        font-size: 0.8em;
+      }
     }
-
+  }
 }
 
-.fa-scroll{
-    padding-left: 2%;
-    padding-right: 2%;
-    @include TabletteLand{
-        font-size: 1em;
-    }
+.fa-scroll {
+  padding-left: 2%;
+  padding-right: 2%;
+  @include TabletteLand {
+    font-size: 1em;
+  }
 }
-.fa-square{
-    padding-right: 1%;
+.fa-square {
+  padding-right: 1%;
 }

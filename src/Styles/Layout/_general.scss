@@ -5,12 +5,10 @@ a {
   text-decoration: none;
 }
 body {
-  width: 100%;
-  background: url(../../Assets/fondRose.webp) no-repeat;
+  width: 100vw;
+  background: url(../../Assets/fondTech.webp) no-repeat;
   background-attachment: fixed;
-  //blend-mode et color, me serve à réaliser l'opacity de l'image en arrière-plan
-  background-blend-mode: lighten;
-  background-color: rgba(255, 255, 255, 0.724);
+  color: white;
 }
 .homeContainer {
   font-family: "Lora", verdana, sans-serif;

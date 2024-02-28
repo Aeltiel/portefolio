@@ -30,7 +30,7 @@
     object-fit: fill;
     border: solid 4px $thirdcolor;
     border-radius: 40px;
-    box-shadow: -10px 5px 8px $secondarycolor;
+    box-shadow: -10px 5px 8px $primarycolor;
     align-self: center;
 
     @include TabletteLand {
@@ -70,21 +70,11 @@
     &--title {
       text-align: center;
       text-decoration: underline;
-      text-decoration-color: $primarycolor;
+      text-decoration-color: $secondarycolor;
       margin-bottom: 20px;
 
       @include Mobile {
         margin-bottom: 10px;
-      }
-    }
-
-    &--langage {
-      margin-top: 20px;
-      text-align: center;
-
-      & span {
-        text-decoration: underline;
-        text-decoration-color: $primarycolor;
       }
     }
   }
