@@ -1,14 +1,16 @@
 // variables pour les livres de l'onglet bibliothèque
-$largeWidthBook : 100px;
-$smallWidthBook : 25px;
-$heightBook : 150px;
-$smallHeightBook : 25px;
-$couverture : #7F5539;
-$page : #FCF3EA;
-$gold : #fad643;
-$bougie : #FBBE4A;
+$largeWidthBook: 100px;
+$smallWidthBook: 25px;
+$heightBook: 150px;
+$smallHeightBook: 25px;
+$couverture: #7f5539;
+$page: #fcf3ea;
+$gold: #fad643;
+$bougie: #fbbe4a;
 
 //variables pour le reste du site
-$primarycolor : #530E53;
-$secondarycolor : #370037;
-$thirdcolor : #BE5F7C;
+$primarycolor: #003959;
+$secondarycolor: #770033;
+$thirdcolor: white;
+$gradient: linear-gradient(to right, $secondarycolor, $primarycolor);
+$gradientVertical: linear-gradient($primarycolor, $secondarycolor);

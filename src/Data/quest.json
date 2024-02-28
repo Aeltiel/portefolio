@@ -13,10 +13,5 @@
         "id" : "3",
         "title" : "Cours Node.js sur Udemy",
         "activity" : "Pour être plus à l'aise avec la partie Backend que j'ai vu lors de ma formation et pour être en adéquation avec le projet d'Api sur lequel je travail, je suis un cours sur node.js pour approfondir mes connaissances et être plus à l'aise avec."    
-    },
-    {
-        "id" : "4",
-        "title" : "Cours Tailwind sur Udemy",
-        "activity" : "Suite à ma quête pour apprendre React + Redux, je me suis dis que m'intéresser à Tailwind pour faire mon CSS plus vite et plus simplement serai une bonne idée."
     }
 ]

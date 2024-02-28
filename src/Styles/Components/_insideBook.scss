@@ -1,5 +1,5 @@
-.inside{
-    &__Container{
+.inside {
+  &__Container {
     width: 80vw;
     height: 70vh;
     background-color: $couverture;
@@ -9,26 +9,27 @@
     position: relative;
     animation: bookOpen 1s ease-in-out backwards;
     z-index: 100;
-    }
-    &__page{
-        display: flex;
-        margin-left: 1%;
-    }
+  }
+  &__page {
+    display: flex;
+    margin-left: 1%;
+    color: black;
+  }
 }
 
-.closeBtn{
-    position: absolute;
-    left: 96%;
-    top: 1%;
-    background-color: transparent;
-    border: none;
-    z-index: 20;
-    cursor: pointer;
-    @include TabletteLand{
-        left: 95%;
-    }
+.closeBtn {
+  position: absolute;
+  left: 96%;
+  top: 1%;
+  background-color: transparent;
+  border: none;
+  z-index: 20;
+  cursor: pointer;
+  @include TabletteLand {
+    left: 95%;
+  }
 }
 
-.fa-xmark{
-    font-size: 1.4em;
+.fa-xmark {
+  font-size: 1.4em;
 }
