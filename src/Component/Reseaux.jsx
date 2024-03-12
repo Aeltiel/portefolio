@@ -23,7 +23,7 @@ function Reseaux() {
             <Button name={"Mon profil AssessFirst"} />
           </a>
           <p>
-            Vous souhaitez connaitre mon portentiel pour travailler dans votre
+            Vous souhaitez connaitre mon potentiel pour travailler dans votre
             entreprise ? Je vous propose de jeter un oeil sur mon profil
             AssessFirst
           </p>
