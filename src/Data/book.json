@@ -17,7 +17,8 @@
                 "image" : "/Assets/Kanap-screen.webp", 
                 "description" : "Le projet Kanap est un site de e-commerce qui vend des canapés. J'avais à disposition le site déjà prêt, ma mission était de le rendre dynamique grâce à JavaScript. Ainsi j'ai pu afficher les produits disponibles en requêtant une API et en intégrant dans la page web les éléments HTML nécessaire. De plus, je devais afficher les détails d'un produit lorsque l'on cliquait sur ce dernier sur la page d'accueil et ce grâce à la récupération de données via l'URL afin de requêter l'API pour ce produit spécifiquement et de manière dynamique. Sur ces détails, il est possible de sélectionner une couleur et une quantité et d'ajouter le produit dans le panier. Le panier qui s'affiche en fonction de ce qu'il y a dans le localstorage et qui se calcul de manière dynamique. Enfin pour valider la commande, le formulaire est vérifié via des Regex afin que les données transmisent par le client soient valides pour ainsi valider la commande",
                 "date" : "Nov 2022",
-                "langage" : [{"id": "01", "icon": "fa-brands fa-js"}]
+                "langage" : [{"id": "01", "icon": "fa-brands fa-js"}],
+                "lien": "https://github.com/Aeltiel/Kanap"
             },
             {
                 "id":"7",
@@ -25,7 +26,8 @@
                 "image" : "/Assets/Piiquante-screen.webp",
                 "description" : "Sur ce projet, mon objectif était de bâtir une API REST afin de permettre à un site de partage de sauce piquante de proposer à ces utilisitateurs de se connecter, d'ajouter une sauce avec un titre, une image, etc... Mais aussi la possibilité de la modifier et de la suppprimer. Un système de like/dislike a été ajouté. Les données sont enregistrées sur une base de données MongoDB. Le serveur a été crée avec express, et la sécurisation des mots de passe est assurée via Bcrypt. Un système de validation des emails est également présente pour s'assurer qu'un email ne soit utilisé que pour un seul compte et que ce dernier soit valide.",
                 "date" : "Dec 2022",
-                "langage" : [{"id": "01", "icon": "fa-brands fa-node-js"}]
+                "langage" : [{"id": "01", "icon": "fa-brands fa-node-js"}],
+                "lien": "https://github.com/Aeltiel/Piiquante"
             },
             {
                 "id":"6",
@@ -36,7 +38,8 @@
                 "langage" : [
                     {"id": "01", "icon": "fa-brands fa-react"}, 
                     {"id": "02", "icon": "fa-brands fa-sass"}
-                ]
+                ],
+                "lien": "https://github.com/Aeltiel/Kasa-OC"
             },
             {
                 "id":"5",
@@ -48,7 +51,8 @@
                     {"id": "01", "icon": "fa-brands fa-react"},
                     {"id": "02", "icon": "fa-brands fa-sass"},
                     {"id" : "03", "iconimg" : "/Assets/redux-icon.webp"}   
-                ]
+                ],
+                "lien" : "https://github.com/Aeltiel/portefolio"
             },
             {
                 "id":"4",
@@ -60,7 +64,8 @@
                     {"id": "01", "icon": "fa-brands fa-react"},
                     {"id": "02", "icon": "fa-brands fa-sass"},
                     {"id": "03", "icon": "fa-brands fa-node-js"}
-            ]
+            ],
+                "lien" : "https://github.com/Aeltiel/list_jv"
             },
             {
                 "id":"3",
@@ -68,7 +73,8 @@
                 "image" : "/Assets/AppMeteo_React_Native.webp",
                 "description" : "Application météo faisant appel à diverses Api pour prendre en main React Native. Dans ce projet, j'ai pu voir la structure d'une app React Native, le système de navigation, les spécificités du langage et son hébergement sur Expo.",
                 "date" : "Août 2023",
-                "langage" : [{"id": "01", "iconimg": "/Assets/ReactNative.webp"}]
+                "langage" : [{"id": "01", "iconimg": "/Assets/ReactNative.webp"}],
+                "lien" : "https://github.com/Aeltiel/react-native-meteo"
             },
             {
                 "id":"2",
@@ -79,15 +85,17 @@
                 "langage" : [
                     {"id": "01", "iconimg": "/Assets/ReactNative.webp"},
                     {"id": "02", "icon" :"fa-brands fa-node-js"}
-                ]
+                ],
+                "lien" : "https://github.com/Aeltiel/Le-Sauveteur-API/tree/React-native"
             },
             {
                 "id":"1",
                 "title": "Api de blog ",
                 "image" : "/Assets/screen-code.webp",
-                "description" : "Projet collaboratif du groupe Inkkube. Ayant intégré ce groupe de travail, je participe à l'élaboration du Api de blog dans l'envirionnement Node.js. Je suis actuellement en traind e faire la partie 'Section' de l'API. In fine, l'api sera relié à une base de données MongoDB.",
+                "description" : "Projet collaboratif du groupe Inkkube. Ayant intégré ce groupe de travail, je participe à l'élaboration du Api de blog dans l'envirionnement Node.js. Je suis actuellement en train de faire la partie 'Section' de l'API. In fine, l'api sera relié à une base de données MongoDB.",
                 "date" : "Nov 2023",
-                "langage" : [{"id": "01", "icon": "fa-brands fa-node-js"}]
+                "langage" : [{"id": "01", "icon": "fa-brands fa-node-js"}],
+                "lien" : "https://github.com/Inkkube/ikblog-node-api"
             }
         ],
         "dragonsKey" : "2"

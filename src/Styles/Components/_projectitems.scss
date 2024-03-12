@@ -18,7 +18,7 @@
     align-items: center;
     border: 3px solid $thirdcolor;
     border-radius: 15px;
-    background-color: $primarycolor;
+    background: $gradient;
     color: white;
     padding: 10px;
     cursor: pointer;
@@ -30,6 +30,7 @@
       width: 90%;
       justify-content: space-between;
       display: flex;
+      align-items: center;
     }
   }
   &__details {
@@ -38,7 +39,7 @@
     margin-left: 10px;
     border: 3px solid $thirdcolor;
     border-radius: 15px;
-    background-color: $primarycolor;
+    background: $gradientVertical;
     position: relative;
     animation: derouler 1s ease-in-out;
     &::before {

@@ -6,7 +6,7 @@
     margin-top: 150px;
     display: grid;
     grid-template-columns: 1000px 300px;
-    background-color: lighten($secondarycolor, 5%);
+    background: $gradient;
     @include TabletteLand {
       grid-template-columns: 800px 200px;
     }
@@ -24,8 +24,7 @@
       align-self: center;
       border-radius: 20px;
       border: 3px solid $thirdcolor;
-      color: white;
-      background-color: $secondarycolor;
+      background: $gradient;
       padding: 20px;
       margin-left: 200px;
       margin-right: 200px;
@@ -70,7 +69,7 @@
         width: 0;
         height: 0;
         position: absolute;
-        border-left-color: $secondarycolor;
+        border-left-color: $primarycolor;
         border-width: 30px;
         @include Tablette {
           bottom: 14%;
@@ -113,8 +112,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
     font-size: 1.5em;
-    background-color: $secondarycolor;
-    color: white;
+    background: $gradient;
     @include Mobile {
       font-size: 1em;
     }
@@ -127,7 +125,7 @@
         color: $thirdcolor;
         &:hover {
           text-decoration: underline;
-          text-decoration-color: white;
+          text-decoration-color: $thirdcolor;
         }
       }
     }
@@ -230,7 +228,7 @@
     }
   }
   &__diplome {
-    background-color: $thirdcolor;
+    background: $gradient;
     margin-top: 100px;
     padding-bottom: 50px;
     @include Mobile {

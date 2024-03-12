@@ -42,7 +42,7 @@
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: solid 5px $primarycolor;
+    border: solid 5px $secondarycolor;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     @include Mobile {
       width: 150px;
@@ -101,12 +101,12 @@
       & span {
         & a {
           font-size: 2em;
-          color: $primarycolor;
+          color: $secondarycolor;
           margin-top: 15px;
         }
 
         & :hover {
-          color: $thirdcolor;
+          color: $primarycolor;
         }
       }
     }
@@ -128,4 +128,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.fa-github {
+  color: $primarycolor;
 }
