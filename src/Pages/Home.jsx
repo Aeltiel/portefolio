@@ -42,7 +42,9 @@ function Home() {
           <section className="presentation">
             <img className="presentation__img" src={moi} alt="Ingrid Stemer" />
             <Presentation
-              title={"Ingrid STEMER / Developpeuse Web"}
+              title={
+                "Ingrid STEMER / Conceptrice Développeuse d'Application x DevOps Alternance"
+              }
               description={data[0].description}
             />
           </section>

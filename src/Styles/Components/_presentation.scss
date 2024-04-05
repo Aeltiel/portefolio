@@ -69,7 +69,7 @@
     display: flex;
     margin-left: 3%;
     margin-right: 3%;
-    margin-top: 20px;
+    margin-top: 15px;
     justify-content: space-between;
 
     @include Tablette {
@@ -87,7 +87,7 @@
         margin-bottom: 20px;
       }
       & p {
-        margin-top: 30px;
+        margin-top: 15px;
         text-align: center;
         @include Mobile {
           margin-top: 20px;
