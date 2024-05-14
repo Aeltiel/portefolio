@@ -3,7 +3,7 @@
        "id" : "001",
        "title" : "Présentation",
        "image" : "/Assets/moi.webp",
-       "description" : "Dans le cadre d'une reconversion, je me dirige vers une carrière dans le Développement Web. Diplômé depuis Janvier 2023, j'étoffe mes connaissances à travers des projets personnels. J'ai également suivi une formation POEC Front end chez Human booster dans ce but. Toujours dans cet objectif d'amélioration je continue à m'auto former tout en étant à la recherche d'une entreprise d'accueil pour une formation de Conceptrice Développeuse d'Application x DevOps qui commencera le 04 Novembre 2024 chez Simplon.",
+       "description" : "Passionnée par le développement logiciel et souhaitant approfondir mes compétences en tant que Conceptrice Développeuse d'Applications, je suis à la recherche d'une opportunité d'alternance. Avec une solide formation technique et une curiosité constante, je suis motivée pour apprendre et m'investir pleinement dans des projets concrets, contribuant ainsi à la création d'applications de qualité, fiables et répondant aux besoins des utilisateurs.",
        "dragonsKey" : "1"
     },
     {
@@ -92,7 +92,7 @@
                 "id":"1",
                 "title": "Api de blog ",
                 "image" : "/Assets/screen-code.webp",
-                "description" : "Projet collaboratif du groupe Inkkube. Ayant intégré ce groupe de travail, je participe à l'élaboration du Api de blog dans l'envirionnement Node.js. Je suis actuellement en train de faire la partie 'Section' de l'API. In fine, l'api sera relié à une base de données MongoDB.",
+                "description" : "Projet collaboratif du groupe Inkkube. Ayant intégré ce groupe de travail, je participe à l'élaboration du Api de blog dans l'envirionnement Node.js. Je suis actuellement en train de faire la partie 'Section' de l'API. In fine, l'api sera relié à une base de données MongoDB et dispose d'une couche Dal pour séparer les logiques.",
                 "date" : "Nov 2023",
                 "langage" : [{"id": "01", "icon": "fa-brands fa-node-js"}],
                 "lien" : "https://github.com/Inkkube/ikblog-node-api"

@@ -2,11 +2,21 @@
     {
         "id" : "1",
         "title" : "Projet JVTheque",
-        "activity" : "Site internet réalisé de A à Z. La partie Backend est une API Rest réalisé en node.js à l'aide d'express. L'API est liée à une base de donnée MongoDB. La partie Frontend est réalisé avec React. Le site permettra de créer un compte afin de créer sa propre liste de Jeux Vidéos, pour ceux qui souhaite avoir un outil accessible partout. Ajoutez les jeux que vous avez, ou que vous souhaitez avoir en fonction de leur plateforme. Puis triez les selon vos envies. L'appli est designé en mobile first afin de faciliter l'intéraction mobile, pour vous aider lors de vos sessions shopping JV. L'appli est également disponible sur desktop pour votre shopping en ligne ! Projet en pause pour en savoir plus sur Node.js afin de peaufiner mon API"
+        "activity" : "Site internet réalisé de A à Z. La partie Backend est une API Rest réalisé en node.js à l'aide d'express. L'API est liée à une base de donnée MongoDB. La partie Frontend est réalisé avec React. Le site permettra de créer un compte afin de créer sa propre liste de Jeux Vidéos, pour ceux qui souhaite avoir un outil accessible partout. Ajoutez les jeux que vous avez, ou que vous souhaitez avoir en fonction de leur plateforme. Puis triez les selon vos envies. L'appli est designé en mobile first afin de faciliter l'intéraction mobile, pour vous aider lors de vos sessions shopping JV. L'appli est également disponible sur desktop pour votre shopping en ligne ! Projet en pause."
     },
     {
         "id" : "2",
         "title" : "Inkkube Api pour un blog",
-        "activity" : "Dans le cadre d'un projet collaboratif, je participe au développement d'une Api. on utilise l'environnement Node.js pour coder l'API en Typscript. La base de données est MongoDB."
+        "activity" : "Dans le cadre d'un projet collaboratif, je participe au développement d'une Api. On utilise l'environnement Node.js pour coder l'API en Typscript avec sur une couche DAL. La base de données est MongoDB."
+    },
+    {
+        "id": "3",
+        "title" : "Cours SQL",
+        "activity" : "Ce cours va me permettre de voir les fondamentaux du SQL ainsi que des bases de donnée. Maîtrise des requêtes et analyse de données, mais aussi création et gestion de Bases de Donées. Et pour finir maîtrise des fonctionnalités avancé du SQL."
+    },
+    {
+        "id" : "4",
+        "title" : "Design Pattern",
+        "activity" : "Recherches pour m'introduire au concept des design pattern, puis apprentissage de certain d'entre eux."
     }
 ]
